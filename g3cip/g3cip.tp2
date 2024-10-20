@@ -1,0 +1,28 @@
+BACKUP ~weidu_external/g3cip/backup~
+SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mods/~
+
+VERSION ~Nightly_102024~
+
+README ~g3cip/languages/%LANGUAGE%/readme-g3cip.html~ ~g3cip/readme-g3cip.html~
+
+AUTO_TRA ~%tra_location%/%s~
+
+LANGUAGE
+  ~English~
+  ~english~
+  ~g3cip/languages/english/game.tra~
+  ~g3cip/languages/english/weidu.tra~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Community Item Pack [main]                       \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1 DESIGNATED 1
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt bg2 tob~ @2
+LABEL ~g3_community_item_pack~
+
+
