@@ -61,13 +61,19 @@ COPY ~g3cip/itm/g3cprc.itm~ ~override~
 COPY ~g3cip/itm/g3cvine.itm~ ~override~
   SAY 0x0c @1008 // identified name
   SAY 0x54 @1009 // identified description
+  
+// Slippery court
+COPY ~g3cip/itm/g3ccourt.itm~ ~override~
+  SAY 0x0c @1010 // identified name
+  SAY 0x54 @1011 // identified description
 
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
   
-// Vine Shield retaliation spell
-COPY ~g3cip/spl/g3cvine.spl~ ~override~
+COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
+     ~g3cip/spl/g3ccoura.spl~ ~override~
+     ~g3cip/spl/g3ccourb.spl~ ~override~
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
