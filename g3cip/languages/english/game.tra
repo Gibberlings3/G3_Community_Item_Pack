@@ -53,3 +53,23 @@ Charge abilities:
   Duration: 4 turns
 
 Weight: 0~
+@1008 = ~Vine Shield~
+@1009 = ~This extraordinary shield is woven from living vines that twist and writhe as if imbued with a life of their own. Over four centuries ago, it was purchased in Sigil, the City of Doors, by a merchant who dealt with an unknown giant race from a distant realm. The shield made its way to Faerûn, where it was acquired by the ranger Elric of the High Forest. Elric used the shield to protect his village from a band of gnoll raiders, the vines ensnaring his foes and turning the tide of battle.
+
+After years of vigilant service, Elric gifted the shield to his apprentice, a young druid named Sylvana. She carried it into the depths of the Cormanthor, where she defended the sacred glades for many years. Sylvana was later ambushed by drow scouts; though she fought valiantly, she was slain, and the shield was taken into the Underdark. There, the shield was sold to a duergar merchant, who traded it to a surface dwarf named Thrain in exchange for rare gemstones.
+
+Thrain brought the shield back to Mithral Hall, where it was wielded by his brother Balin during skirmishes with goblin tribes. In one fierce encounter, Balin fell, and the shield was lost in the chaos. Years later, it resurfaced in the hands of a human mercenary, Katarina of Amn, who claimed to have won it in a game of Dragon Dice. Katarina utilized the shield's entangling vines to capture bounties alive, increasing her notoriety.
+
+Her luck ran out when she was defeated in combat by the paladin Sir Reginald of Athkatla, who took the shield as a prize but found its wild nature incompatible with his disciplined fighting style. He sold it to a Calishite trader, who in turn lost it to pirates off the Sword Coast. The pirate captain, Redbeard Rufus, used the shield during boarding actions until his ship was sunk by a storm, and the shield was believed lost at sea.
+
+Decades later, the Vine Shield washed ashore near Baldur's Gate and was found by a young adventurer. Its journey continues, the living vines ever eager to ensnare new foes, its history etched in the legends of those who have wielded it.
+
+Equipped abilities:
+– Armor Class: +2
+– No protection against missile attacks
+– Entangles any who damage the wielder for two rounds, save vs. spell at -2 to negate
+
+Requires:
+ 4 Strength
+
+Weight: 2~

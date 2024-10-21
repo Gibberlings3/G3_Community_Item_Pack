@@ -56,6 +56,18 @@ COPY ~g3cip/itm/g3ccsm.itm~ ~override~
 COPY ~g3cip/itm/g3cprc.itm~ ~override~
   SAY 0x0c @1006 // identified name
   SAY 0x54 @1007 // identified description
+  
+// Vine Shield
+COPY ~g3cip/itm/g3cvine.itm~ ~override~
+  SAY 0x0c @1008 // identified name
+  SAY 0x54 @1009 // identified description
+
+/////                                                  \\\\\
+///// spells                                           \\\\\
+/////                                                  \\\\\
+  
+// Vine Shield retaliation spell
+COPY ~g3cip/spl/g3cvine.spl~ ~override~
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
