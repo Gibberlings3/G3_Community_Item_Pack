@@ -28,3 +28,28 @@ Charge abilities:
   Duration: 13 rounds
 
 Weight: 0~
+
+@1004 = ~Countability in Summoning Matrices~
+@1005 = ~This esoteric and advanced tome of arcane theory would be beyond those without magical training. While most of the book is focused on the theoretical nature of summoning rituals in regards to the countable Elemental Planes and the uncountable, infinite layers of the Abyss, it does provide a few practical examples that any spellcaster would find useful.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Fire Elemental once per day
+  Special: A fire elemental is summoned in the vicinity of the caster
+  Duration: 10 turns
+– Summon Air Elemental Image once per day
+  Special: An air elemental is summoned in the vicinity of the caster
+  Duration: 10 turns
+  
+Weight: 0~
+@1006 = ~The Power of Real Change~
+@1007 = ~The majority of this book is self-help advice, but in the very last chapter contains arcane methodologies for the truly desperate.
+
+STATISTICS:
+Charge abilities:
+– Polymorph Self once per day
+  Special: The caster is able to assume the form of another creature
+  Duration: 4 turns
+
+Weight: 0~

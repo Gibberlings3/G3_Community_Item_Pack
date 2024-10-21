@@ -25,16 +25,43 @@ BEGIN @1 DESIGNATED 1
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt bg2 tob~ @2
 LABEL ~g3_community_item_pack~
 
+/////                                                  \\\\\
+///// 2da/ids edits                                    \\\\\
+/////                                                  \\\\\
+  
+APPEND ~tooltip.2da~ 
+~g3ccgsd 12080 12018 -1
+g3ccsm 15211 24839 -1~
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
 // Akkabar's Battleblade by WanderingScholar
 COPY ~g3cip/itm/g3cakk.itm~ ~override~
   SAY 0x0c @1000 // identified name
   SAY 0x54 @1001 // identified description
-
+  
 // A Caster’s Guide to Self-Defense by GlitterGear
 COPY ~g3cip/itm/g3ccgsd.itm~ ~override~
   SAY 0x0c @1002 // identified name
   SAY 0x54 @1003 // identified description
-  WRITE_ASCIIE 0x03a C!ICON
   
-APPEND ~tooltip.2da~ ~g3ccgsd 12080 12018 -1~
+// Countability in Summoning Matrices
+COPY ~g3cip/itm/g3ccsm.itm~ ~override~
+  SAY 0x0c @1004 // identified name
+  SAY 0x54 @1005 // identified description
+  
+// The Power of Real Change
+COPY ~g3cip/itm/g3cprc.itm~ ~override~
+  SAY 0x0c @1006 // identified name
+  SAY 0x54 @1007 // identified description
 
+/////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+  
+// place battleblade
+COPY_EXISTING ~mage18z.cre~ ~override~
+  ADD_CRE_ITEM ~g3cakk~ #1 #0 #0 ~none~ ~ring~
+  BUT_ONLY 
