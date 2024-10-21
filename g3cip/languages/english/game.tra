@@ -92,3 +92,20 @@ Equipped abilities:
 – Luck: +1
 
 Weight: 0~
+@1012 = ~Graze~
+@1013 = ~Once wielded by a duelist of minor note that sought utmost efficiency in combat. The Graze posseses no destructive enchantments and acts as a normal dagger in training. When used in live combat, the dagger reacts to attacks made against the wielder, moving on its own to minorly deflect attacks.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Armor Class: additional +1 vs. slashing and piercing
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

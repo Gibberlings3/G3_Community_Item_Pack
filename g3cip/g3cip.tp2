@@ -66,6 +66,11 @@ COPY ~g3cip/itm/g3cvine.itm~ ~override~
 COPY ~g3cip/itm/g3ccourt.itm~ ~override~
   SAY 0x0c @1010 // identified name
   SAY 0x54 @1011 // identified description
+  
+// Graze
+COPY ~g3cip/itm/g3cgraze.itm~ ~override~
+  SAY 0x0c @1012 // identified name
+  SAY 0x54 @1013 // identified description
 
 /////                                                  \\\\\
 ///// spells                                           \\\\\
