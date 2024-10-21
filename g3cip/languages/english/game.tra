@@ -1,0 +1,30 @@
+@1000 = ~Akkabar's Battleblade~
+@1001 = ~The rulers of the Shoon Imperium possessed unique magical rings known as Qysari Rings. The term "qysar," meaning "emperor," was adopted by Amahl Shoon III, the first in a line of imperial rulers. These rings were a subset of shoonrings, magical rings crafted in the Shoon Imperium during Calimshan's sixth age (27 – 450 DR). Shoonrings were distinguished by their specific construction and enchantment methods. According to the slave scribe Rativ ym Shoon, who documented the rings in 356 DR, there were twelve known Qysari Rings. This information was later included in "The Magics of the South" by Zatan Arrowswift, the Herald of Athkatla. However, only ten rings are currently described, with two of those having uncertain origins. 
+
+Akkabar's legendary ring, known as the battleblade ring, held the distinction of being the inaugural Qysari Ring. This remarkable artifact possessed the ability to conjure a barrier of blades when activated by a specific verbal command.
+
+STATISTICS:
+
+Charge abilities:
+– Blade Barrier once per day
+  Special: Creates a wall of circling, razor-sharp blades
+  Duration: 1 turn
+
+Equipped abilities:
+– Armor Class: +2
+
+Weight: 0~
+@1002 = ~A Caster’s Guide to Self-Defense~
+@1003 = ~This book contains helpful advice to any spellcaster who finds themself in combat. Such tips include "run away really fast" and "don't get hit". While these would be unhelpful platitudes in any other book, the author has helpfully included a guide on using magic to follow the advice.
+
+STATISTICS:
+
+Charge abilities:
+– Haste once per day
+  Special: All creatures affected function at double their normal movement rate
+  Duration: 13 rounds
+– Mirror Image once per day
+  Special: Caster causes from 2 to 8 exact duplicates of <PRO_HIMHER>self to come into being
+  Duration: 13 rounds
+
+Weight: 0~

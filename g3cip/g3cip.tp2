@@ -25,4 +25,16 @@ BEGIN @1 DESIGNATED 1
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt bg2 tob~ @2
 LABEL ~g3_community_item_pack~
 
+// Akkabar's Battleblade by WanderingScholar
+COPY ~g3cip/itm/g3cakk.itm~ ~override~
+  SAY 0x0c @1000 // identified name
+  SAY 0x54 @1001 // identified description
+
+// A Caster’s Guide to Self-Defense by GlitterGear
+COPY ~g3cip/itm/g3ccgsd.itm~ ~override~
+  SAY 0x0c @1002 // identified name
+  SAY 0x54 @1003 // identified description
+  WRITE_ASCIIE 0x03a C!ICON
+  
+APPEND ~tooltip.2da~ ~g3ccgsd 12080 12018 -1~
 
