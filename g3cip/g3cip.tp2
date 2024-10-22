@@ -100,6 +100,16 @@ COPY ~g3cip/itm/g3clunar.itm~ ~override~
   SAY 0x0c @1014 // identified name
   SAY 0x54 @1015 // identified description
 
+// Never Alone by cdx
+COPY ~g3cip/itm/g3cnever.itm~ ~override~
+  SAY 0x0c @1016 // identified name
+  SAY 0x54 @1017 // identified description
+
+// Tinkerer's Spectacles by cdx
+COPY ~g3cip/itm/g3ctinkr.itm~ ~override~
+  SAY 0x0c @1018 // identified name
+  SAY 0x54 @1019 // identified description
+
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
@@ -107,6 +117,7 @@ COPY ~g3cip/itm/g3clunar.itm~ ~override~
 COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3ccoura.spl~ ~override~
      ~g3cip/spl/g3ccourb.spl~ ~override~
+     ~g3cip/spl/g3ctinkz.spl~ ~override~
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
@@ -121,5 +132,6 @@ COPY_EXISTING ~mage18z.cre~ ~override~
 ///// misc                                             \\\\\
 /////                                                  \\\\\
   
-COPY ~g3cip/wav/g3ccourt.wav~  ~override~
+COPY ~g3cip/wav/g3ccourt.wav~ ~override~
      ~g3cip/eff/g3clunar.eff~ ~override~
+     ~g3cip/eff/g3ctinkr.eff~ ~override~

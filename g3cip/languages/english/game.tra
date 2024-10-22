@@ -128,3 +128,37 @@ Requires:
  3 Strength
 
 Weight: 0~ 
+@1016 = ~Never Alone~
+@1017 = ~This cowl is made of fur and has the color of a gibberling. There is strength in numbers and whenever you are in trouble, you can call for help.
+
+STATISTICS:
+
+Charge abilities:
+– Mirror Image three times per day
+  Special: Caster causes from 2 to 8 exact duplicates of <PRO_HIMHER>self to come into being
+  Duration: 6 rounds
+
+Equipped abilities:
+– Immunity to fear and panic
+
+Special abilities:
+– Can cast three mirror images (Mirror Image at Level 3) three times a day
+
+Weight: 1~
+@1018 = ~Tinkerer's Spectacles~
+@1019 = ~This apparatus of gnomish origin has been designed to be easy to use by anyone. Reid Bugwhipper (or some better gnomish-sounding bug-killing name) used the spectacles in his pest and bug extermination practice. Tragically, he perished when a particularly egregious infestation of giant spiders overwhelmed him - he had meticulous preparations but his count of the critters was off by one.
+
+STATISTICS:
+
+Charge abilities:
+– Knock once per day
+  Special: Opens locked, held, or wizard-locked doors
+  Duration: Instant
+
+Equipped abilities:
+– Open Locks: +5%
+– Find Traps: +25%
+– +2 THAC0 against Spiders (Thieves only)
+– Wearer gets confused for 2 rounds on equipping the item if not a thief or gnome
+
+Weight: 1~
