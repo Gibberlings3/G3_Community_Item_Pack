@@ -109,3 +109,22 @@ Requires:
  3 Strength
 
 Weight: 1~
+@1014 = ~Lunar Shards~
+@1015 = ~Legend tells of a humble shepherd whose life was transformed by praying to Selûne bathed by the full moon. After the prayer, a ball of fire fell from the skies, striking the barn, and killing most of his livestock. The man refused to believe that the Moonmaiden would cause such misfortune, so he looked in the debris to see a sign from the goddess. A meteorite was found to be the cause of the impact, and on it scraps of a metal that he believed to be silver, which he related instantly to Selûne. He brought the metal to the temple, where the monks could bless it. Impressed by the shepherd's unwavering faith, they took him in, and taught him the ways of the servants of Selûne. Over time, the new recruit was able to raise enough wealth for the monastery to commission a holy weapon made from the blessed metal. A blacksmith, combining the meteorite's celestial metal with pure silver, forged seven flawless daggers, each representing one of the seven stars in Selûne’s holy symbol.
+
+STATISTICS:
+
+Combat abilities:
+
+– Can harm all lycanthropes
+– Can be recovered from the target after being used
+
+THAC0: +1
+Damage: 1d4 (missile), +2 vs evil creatures
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~ 

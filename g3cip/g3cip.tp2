@@ -95,6 +95,11 @@ COPY ~g3cip/itm/g3cgraze.itm~ ~override~
   SAY 0x0c @1012 // identified name
   SAY 0x54 @1013 // identified description
 
+// Lunar Shards by suy
+COPY ~g3cip/itm/g3clunar.itm~ ~override~
+  SAY 0x0c @1014 // identified name
+  SAY 0x54 @1015 // identified description
+
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
@@ -117,3 +122,4 @@ COPY_EXISTING ~mage18z.cre~ ~override~
 /////                                                  \\\\\
   
 COPY ~g3cip/wav/g3ccourt.wav~  ~override~
+     ~g3cip/eff/g3clunar.eff~ ~override~
