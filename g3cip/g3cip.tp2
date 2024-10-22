@@ -34,6 +34,29 @@ APPEND ~tooltip.2da~
 g3ccsm 15211 24839 -1~
 
 /////                                                  \\\\\
+///// scripting                                        \\\\\
+/////                                                  \\\\\
+
+COPY_EXISTING ~mage18z.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(SetGlobal("SpellTrigger","LOCALS",1)[%LNL%%MNL%%WNL% %TAB%]+END\)~ ~\1
+    
+IF
+	See(NearestEnemyOf(Myself))
+	HasItem("g3cakk",Myself)
+  Range(NearestEnemyOf(Myself),5)
+	Global("g3cakk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("g3cakk","LOCALS",1)
+		//UseItem("g3cakk",Myself)
+    ApplySpell(Myself,NPC_BLADE_BARRIER)
+END
+~
+  END
+  BUT_ONLY
+
+/////                                                  \\\\\
 ///// items                                            \\\\\
 /////                                                  \\\\\
 
@@ -88,3 +111,9 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
 COPY_EXISTING ~mage18z.cre~ ~override~
   ADD_CRE_ITEM ~g3cakk~ #1 #0 #0 ~none~ ~ring~
   BUT_ONLY 
+
+/////                                                  \\\\\
+///// misc                                             \\\\\
+/////                                                  \\\\\
+  
+COPY ~g3cip/wav/g3ccourt.wav~  ~override~
