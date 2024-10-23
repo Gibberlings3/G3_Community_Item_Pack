@@ -111,6 +111,11 @@ COPY ~g3cip/itm/g3ctinkr.itm~ ~override~
   SAY 0x0c @1018 // identified name
   SAY 0x54 @1019 // identified description
 
+// Belt of Urdunnir by DiesIrae
+COPY ~g3cip/itm/g3curd.itm~ ~override~
+  SAY 0x0c @1021 // identified name
+  SAY 0x54 @1022 // identified description
+  
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
