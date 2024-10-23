@@ -188,3 +188,17 @@ Equipped abilities:
 - Blinds wearer when they see an enemy 
 
 Weight: 0~
+@1025 = ~Executioner Putty~
+@1026 = ~This unusual blob of pitch black clay is freezing cold to the touch and resembles an executioner's hood. It can be stretched and shaped into a variety of forms for one's own amusement, but always reverts to its original, eerie shape.
+
+STATISTICS:
+
+Charge abilities:
+– Executioner's Eyes once per day
+  Special: Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies
+  Area of Effect: 15 ft. radius
+  Duration: 10 rounds
+
+Weight: 0~
+@1027 = ~Executioner's Eyes~
+@1028 = ~Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies within a 15-foot radius for 10 rounds.~

@@ -11,6 +11,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY g3c_prices BEGIN
   g3ctinkr => 3500  // Tinkerer's Spectacles by cdx
   g3cvine  => 1500  // Vine Shield by Mithradates
   g3curd   => 15000 // Belt of Urdunnir by DiesIrae
-  g3peril  => 1000  // Peril-Sensitive Goggles by jmerry
+  g3cperil => 1000  // Peril-Sensitive Goggles by jmerry
+  g3cexec  => 9000  // Executioner Putty by Giovanski
 
 END

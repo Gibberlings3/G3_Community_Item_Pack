@@ -117,9 +117,14 @@ COPY ~g3cip/itm/g3curd.itm~ ~override~
   SAY 0x54 @1022 // identified description
 
 // Peril-Sensitive Goggles by jmerry
-COPY ~g3cip/itm/g3peril.itm~ ~override~
+COPY ~g3cip/itm/g3cperil.itm~ ~override~
   SAY 0x0c @1023 // identified name
   SAY 0x54 @1024 // identified description
+
+// Executioner Putty by Giovanski
+COPY ~g3cip/itm/g3cexec.itm~ ~override~
+  SAY 0x0c @1025 // identified name
+  SAY 0x54 @1026 // identified description
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
@@ -129,6 +134,11 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3ccoura.spl~ ~override~
      ~g3cip/spl/g3ccourb.spl~ ~override~
      ~g3cip/spl/g3ctinkz.spl~ ~override~
+
+// Executioner Putty by Giovanski
+COPY ~g3cip/spl/g3cexec.spl~ ~override~
+  SAY 0x08 @1027 // identified name
+  SAY 0x50 @1028 // identified description
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
