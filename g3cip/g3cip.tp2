@@ -115,6 +115,11 @@ COPY ~g3cip/itm/g3ctinkr.itm~ ~override~
 COPY ~g3cip/itm/g3curd.itm~ ~override~
   SAY 0x0c @1021 // identified name
   SAY 0x54 @1022 // identified description
+
+// Peril-Sensitive Goggles by jmerry
+COPY ~g3cip/itm/g3peril.itm~ ~override~
+  SAY 0x0c @1023 // identified name
+  SAY 0x54 @1024 // identified description
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
