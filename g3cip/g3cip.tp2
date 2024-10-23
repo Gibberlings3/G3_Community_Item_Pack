@@ -50,6 +50,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("g3cakk","LOCALS",1)
 		//UseItem("g3cakk",Myself)
+    DisplayString(Myself,@1020)
     ApplySpell(Myself,NPC_BLADE_BARRIER)
 END
 ~
@@ -80,17 +81,17 @@ COPY ~g3cip/itm/g3cprc.itm~ ~override~
   SAY 0x0c @1006 // identified name
   SAY 0x54 @1007 // identified description
   
-// Vine Shield
+// Vine Shield by Mithradates
 COPY ~g3cip/itm/g3cvine.itm~ ~override~
   SAY 0x0c @1008 // identified name
   SAY 0x54 @1009 // identified description
   
-// Slippery court
+// Slippery Court by lynx
 COPY ~g3cip/itm/g3ccourt.itm~ ~override~
   SAY 0x0c @1010 // identified name
   SAY 0x54 @1011 // identified description
   
-// Graze
+// Graze by Thacobell
 COPY ~g3cip/itm/g3cgraze.itm~ ~override~
   SAY 0x0c @1012 // identified name
   SAY 0x54 @1013 // identified description
@@ -135,3 +136,17 @@ COPY_EXISTING ~mage18z.cre~ ~override~
 COPY ~g3cip/wav/g3ccourt.wav~ ~override~
      ~g3cip/eff/g3clunar.eff~ ~override~
      ~g3cip/eff/g3ctinkr.eff~ ~override~
+
+/////                                                  \\\\\
+///// pricing                                          \\\\\
+/////                                                  \\\\\
+
+INCLUDE ~g3cip/lib/prices.tpa~
+
+ACTION_PHP_EACH g3c_prices AS item => price BEGIN
+
+  COPY_EXISTING ~%item%.itm~ ~override~
+    WRITE_LONG 0x34 ~%price%~
+    BUT_ONLY
+
+END
