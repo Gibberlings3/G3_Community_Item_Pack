@@ -229,3 +229,26 @@ Requires:
  13 Strength
 
 Weight: 12~
+@1031 = ~Robe of the Archmage Jasteya~
+@1032 = ~This very powerful mage robe provides excellent protection by increasing saving throws, reducing casting time, regenerating wounds in battle, and immunizing against Necromantic magic, making it particularly useful. This robe was made some time ago by the legendary archmage Jasteya, Chosen of Mystra renowned in all the Realms and loved by all.t lavender hue of this stone dances and sparkles, as if the stone itself were alive. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 0
+– Saving Throws: +2
+– Improves casting speed by 2
+– Regenerate 1 Hit Point per round
+– Immunity to Necromantic spells
+
+Weight: 6~
+@1033 = ~Emerald Ioun Stone~
+@1034 = ~This beautiful and finely polished dark green ioun stone, created by a talented enchanter, immunizes not only its bearer against the Negative Plane but intreases significantly too the chances in case of confrontations; it's usable moreover by everyone, which can to make it most useful for many professions.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to level drain
+– Saving Throws: +1
+
+Weight: 0~

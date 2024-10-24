@@ -13,5 +13,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY g3c_prices BEGIN
   g3curd   => 15000 // Belt of Urdunnir by DiesIrae
   g3cperil => 1000  // Peril-Sensitive Goggles by jmerry
   g3cexec  => 9000  // Executioner Putty by Giovanski
+  g3cbrush => 8500  // The Realmshaper's Brush by CrevsDaak
+  g3cjast  => 30000 // Robe of the Archmage Jasteya by Prof Errata
+  g3cemer  => 16000 // Emerald Ioun Stone by Prof Errata
 
 END

@@ -166,7 +166,17 @@ ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BE
     LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_blue  STR_VAR match_resource = g3cbrusb END
     
 END
-  
+
+// Robe of the Archmage Jasteya by Prof Errata
+COPY ~g3cip/itm/g3cjast.itm~ ~override~
+  SAY 0x0c @1031 // identified name
+  SAY 0x54 @1032 // identified description
+
+// Emerald Ioun Stone by Prof Errata
+COPY ~g3cip/itm/g3cemer.itm~ ~override~
+  SAY 0x0c @1033 // identified name
+  SAY 0x54 @1034 // identified description
+ 
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
@@ -236,6 +246,6 @@ ACTION_PHP_EACH g3c_prices AS item => price BEGIN
 
   COPY_EXISTING ~%item%.itm~ ~override~
     WRITE_LONG 0x34 ~%price%~
-    BUT_ONLY
+    BUT_ONLY IF_EXISTS
 
 END
