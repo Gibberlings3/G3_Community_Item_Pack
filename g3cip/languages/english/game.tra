@@ -115,7 +115,6 @@ Weight: 1~
 STATISTICS:
 
 Combat abilities:
-
 – Can harm all lycanthropes
 – Can be recovered from the target after being used
 
@@ -202,3 +201,31 @@ Charge abilities:
 Weight: 0~
 @1027 = ~Executioner's Eyes~
 @1028 = ~Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies within a 15-foot radius for 10 rounds.~
+@1029 = ~The Realmshaper's Brush~
+@1030 = ~Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker "Son of Drago." Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
+
+STATISTICS:
+
+Combat abilities:
+– When hitting a target 33% chance to paint them green, 33% chance to paint them red, and 33% chance to paint them blue. Targets with a color already applied to them suffer additional effects as follows:
+– Painted green, hit by green: target is made invisible for one round, but takes 5 Poison damage per second for one round as well.
+– Painted green, hit by red: target is cursed as by the Contagion spell, but as a semi-permanent curse with a -4 save vs. breath.
+– Painted green, hit by blue: target is Hasted, and suffers from a -10 penalty to melee damage, however, each time they land an attack, they must save vs. spells or take 2d12 lightning damage.
+– Painted red, hit by red: target immediately takes 4d6 slashing damage, some blood/gorey effect should play when this happens.
+– Painted red, hit by green: target must save vs. death or be knocked unconcious for one round.
+– Painted red, hit by blue: all nearby enemies and allies are protected (50% cumulative res) from Lightning damage, prot. from evil visual plays on every affected creature (15' radius).
+– Painted blue, hit by blue: target is given two extra attacks per round, but cannot cast spells for half a round.
+– Painted blue, hit by red: target is struck by lightning (Call Lightning animation plays), takes 7d7 lightning damage.
+– Painted blue, hit by green: both the wielder and the caster take 2d4 cold damage and are slowed (save vs. breath negates) for 1 round.
+– For the specific combination of Red -> Green -> Blue, all previous effects are to be negated and a Rogue Stone is created in the target's inventory. 
+
+THAC0: +4
+Damage: 1d10+4
+Damage type: Piercing
+Speed Factor: 5
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 12~

@@ -33,6 +33,35 @@ APPEND ~tooltip.2da~
 ~g3ccgsd 12080 12018 -1
 g3ccsm 15211 24839 -1~
 
+COPY_EXISTING ~splstate.ids~ ~override~
+  SET g3brush_red = 0
+  SET g3brush_green = 0
+  SET g3brush_blue = 0
+  SET g3brush_redgreen = 0
+  FOR (index = 127 ; index < 256 ; ++index) BEGIN
+    SET found = 0
+    REPLACE_EVALUATE ~^\(%index%[ %TAB%]+\)~ BEGIN
+      SET found = 1
+    END ~%MATCH1%~ 
+    PATCH_IF !found BEGIN
+      PATCH_IF !g3brush_red      BEGIN SET g3brush_red = index      END ELSE
+      PATCH_IF !g3brush_green    BEGIN SET g3brush_green = index    END ELSE
+      PATCH_IF !g3brush_blue     BEGIN SET g3brush_blue = index     END ELSE
+      PATCH_IF !g3brush_redgreen BEGIN SET g3brush_redgreen = index SET index = 256 END 
+    END
+  END
+  BUT_ONLY  
+  
+ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN 
+
+  APPEND ~splstate.ids~ 
+~%g3brush_red% g3brush_red
+%g3brush_green% g3brush_green
+%g3brush_blue% g3brush_blue
+%g3brush_redgreen% g3brush_redgreen~
+
+END
+  
 /////                                                  \\\\\
 ///// scripting                                        \\\\\
 /////                                                  \\\\\
@@ -126,6 +155,18 @@ COPY ~g3cip/itm/g3cexec.itm~ ~override~
   SAY 0x0c @1025 // identified name
   SAY 0x54 @1026 // identified description
   
+ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN 
+
+  // The Realmshaper's Brush by CrevsDaak
+  COPY ~g3cip/itm/g3cbrush.itm~ ~override~
+    SAY 0x0c @1029 // identified name
+    SAY 0x54 @1030 // identified description
+    LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_red   STR_VAR match_resource = g3cbrusr END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_green STR_VAR match_resource = g3cbrusg END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_blue  STR_VAR match_resource = g3cbrusb END
+    
+END
+  
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
@@ -139,6 +180,34 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
 COPY ~g3cip/spl/g3cexec.spl~ ~override~
   SAY 0x08 @1027 // identified name
   SAY 0x50 @1028 // identified description
+  
+ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
+
+  COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrur0.spl~ 
+    LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_red  END
+
+  COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrug0.spl~ 
+    LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_green  END
+    LPF ALTER_EFFECT INT_VAR match_opcode =   7 parameter1 = 53  END
+
+  COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrub0.spl~ 
+    LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_blue   END
+    LPF ALTER_EFFECT INT_VAR match_opcode =   7 parameter1 = 58  END
+    
+  COPY ~g3cip/spl/g3cbrub1.spl~ ~override~ 
+       ~g3cip/spl/g3cbrub2.spl~ ~override~ 
+       ~g3cip/spl/g3cbrub3.spl~ ~override~ 
+       ~g3cip/spl/g3cbrub4.spl~ ~override~  
+       ~g3cip/spl/g3cbrusb.spl~ ~override~  
+       ~g3cip/spl/g3cbrusn.spl~ ~override~ 
+  
+  COPY ~g3cip/spl/g3cbrusr.spl~ ~override~ 
+    LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_redgreen  END
+  
+  COPY ~g3cip/spl/g3cbrusg.spl~ ~override~ 
+    LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_redgreen  END
+    
+END
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
