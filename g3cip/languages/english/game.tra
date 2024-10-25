@@ -288,3 +288,16 @@ Weight: 0~
 @1039 = ~Nice lucky sweater! With some Elven Holy Water, nuts from the Tree of Life, and 5,000 gold pieces, Cespenar can make this even better!~
 @1040 = ~Cespenar can wash your sweater with the Elven Holy Water and nuts from the Tree of Life to make it ALLLLLL better. It will cost 5,000 gold.~
 @1041 = ~Smells funny in here, you needs to clean.~
+@1042 = ~Spiked Armor~
+@1043 = ~Favoured by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.
+
+STATISTICS:
+
+Equipped abilities:
+– While enraged, any opponent within 5-ft. that successfully hits the wearer suffers 1d4 points of piercing damage.
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 65~

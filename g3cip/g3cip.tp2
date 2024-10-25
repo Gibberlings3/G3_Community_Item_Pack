@@ -190,6 +190,11 @@ COPY ~g3cip/itm/g3cluck0.itm~ ~override~
 COPY ~g3cip/itm/g3cluck1.itm~ ~override~
   SAY 0x0c @1035 // identified name
   SAY 0x54 @1037 // identified description
+
+// Spiked Armor by a.greene
+COPY ~g3cip/itm/g3cspike.itm~ ~override~
+  SAY 0x08 @1042 // identified name
+  SAY 0x50 @1043 // identified description
  
 /////                                                  \\\\\
 ///// spells                                           \\\\\
@@ -199,6 +204,9 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3ccoura.spl~ ~override~
      ~g3cip/spl/g3ccourb.spl~ ~override~
      ~g3cip/spl/g3ctinkz.spl~ ~override~
+     ~g3cip/spl/g3cspika.spl~ ~override~
+     ~g3cip/spl/g3cspikb.spl~ ~override~
+     ~g3cip/spl/g3cspikc.spl~ ~override~
 
 // Executioner Putty by Giovanski
 COPY ~g3cip/spl/g3cexec.spl~ ~override~
@@ -232,6 +240,10 @@ ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BE
     LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_redgreen  END
     
 END
+
+COPY_EXISTING ~spcl321.spl~ ~override~ // berserker enrage ability
+  LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 146 target = 1 parameter2 = 1 timing = 1 resist_dispel = 2 STR_VAR resource = g3cspikb END
+  LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 146 target = 1 parameter2 = 1 timing = 1 resist_dispel = 2 STR_VAR resource = g3cspika END
 
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
