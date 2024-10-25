@@ -301,3 +301,25 @@ Requires:
  12 Strength
 
 Weight: 65~
+@1044 = ~Dart of the Lethargic Soul~
+@1045 = ~Forged by the infamous drow weaponsmith Draegloth Veldrin, the Dart of the Lethargic Soul is a masterpiece of Underdark craftsmanship. Veldrin, a devout follower of Kiaransalee, imbued this dart with energies drawn from souls trapped between life and death. While not crafted by the deity herself, the dart resonates with her essence, reflecting her dominion over vengeance and undeath.
+
+Those struck by the dart experience an overwhelming lethargy, their movements slowed as if burdened by the weight of lost souls. The wielder, shielded by the dart's necromantic magic, gains immunity to similar slowing effects, allowing them to move unimpeded through battles that mire others.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to slow
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+– 20% chance of slowing target for 12 seconds, save vs. death at -2 to negate
+
+THAC0: +3
+Damage: 1d3+3 (missile)
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+    

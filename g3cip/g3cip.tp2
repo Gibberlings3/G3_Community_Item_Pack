@@ -195,7 +195,12 @@ COPY ~g3cip/itm/g3cluck1.itm~ ~override~
 COPY ~g3cip/itm/g3cspike.itm~ ~override~
   SAY 0x08 @1042 // identified name
   SAY 0x50 @1043 // identified description
- 
+
+// Dart of the Lethargic Soul by Marzx13
+COPY ~g3cip/itm/g3clsoul.itm~ ~override~
+  SAY 0x0c @1044 // identified name
+  SAY 0x54 @1045 // identified description
+  
 /////                                                  \\\\\
 ///// spells                                           \\\\\
 /////                                                  \\\\\
