@@ -59,12 +59,14 @@ ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BE
 %g3brush_green% g3brush_green
 %g3brush_blue% g3brush_blue
 %g3brush_redgreen% g3brush_redgreen~
-
-END
+  
+END  
   
 /////                                                  \\\\\
-///// scripting                                        \\\\\
+///// scripting/dialogue                               \\\\\
 /////                                                  \\\\\
+
+COMPILE ~g3cip/dlg/g3cip.d~
 
 COPY_EXISTING ~mage18z.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN
@@ -85,6 +87,8 @@ END
 ~
   END
   BUT_ONLY
+  
+EXTEND_BOTTOM ~botsmith.bcs~ ~g3cip/baf/botsmith.baf~
 
 /////                                                  \\\\\
 ///// items                                            \\\\\
@@ -176,6 +180,16 @@ COPY ~g3cip/itm/g3cjast.itm~ ~override~
 COPY ~g3cip/itm/g3cemer.itm~ ~override~
   SAY 0x0c @1033 // identified name
   SAY 0x54 @1034 // identified description
+
+// The Lucky Sweater by StummvonBordwehr
+COPY ~g3cip/itm/g3cluck0.itm~ ~override~
+  SAY 0x0c @1035 // identified name
+  SAY 0x54 @1036 // identified description
+
+// The Lucky Sweater [upgraded] by StummvonBordwehr
+COPY ~g3cip/itm/g3cluck1.itm~ ~override~
+  SAY 0x0c @1035 // identified name
+  SAY 0x54 @1037 // identified description
  
 /////                                                  \\\\\
 ///// spells                                           \\\\\
@@ -248,4 +262,10 @@ ACTION_PHP_EACH g3c_prices AS item => price BEGIN
     WRITE_LONG 0x34 ~%price%~
     BUT_ONLY IF_EXISTS
 
-END
+END 
+  
+ACTION_IF !g3brush_redgreen BEGIN 
+
+  PRINT @3
+  
+END  

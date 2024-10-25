@@ -16,5 +16,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY g3c_prices BEGIN
   g3cbrush => 8500  // The Realmshaper's Brush by CrevsDaak
   g3cjast  => 30000 // Robe of the Archmage Jasteya by Prof Errata
   g3cemer  => 16000 // Emerald Ioun Stone by Prof Errata
+  g3cluck0 => 4000  // The Lucky Sweater by StummvonBordwehr
+  g3cluck1 => 5000  // The Lucky Sweater [upgraded] by StummvonBordwehr
 
 END

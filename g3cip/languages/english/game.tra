@@ -78,8 +78,6 @@ Weight: 2~
 
 STATISTICS:
 
-STATISTICS:
-
 Equipped abilities:
 – Armor Class: +1
 – Saving Throws: +1
@@ -252,3 +250,41 @@ Equipped abilities:
 – Saving Throws: +1
 
 Weight: 0~
+@1035 = ~The Lucky Sweater~
+@1036 = ~Bards tell that this sweater was knitted long ago from blessed hollyphant wool, the work of an artisan who sought to fashion a sweater worthy of pairing with the fabled golden pantaloons. While much ink has been spilled in the quest for its origins, wearers do find that they are ever so slightly lucky, as though some kindly being is watching over them. Even though the Sweater seems uncomfortable to wear,  it actually fits everybody nicely. Wearing the sweater gives you a warm and fuzzy feeling - and a strange longing for turnips.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Saving Throws: +1
+– Find Traps: +5%
+– Pick Pockets: +5%
+– Move Silently: +5%
+– Hide In Shadows: +5%
+– Detect Illusion: +5%
+– Set Traps: +5%
+– Luck: +1
+
+Weight: 0~
+@1037 = ~Bards tell that this sweater was knitted long ago from blessed hollyphant wool, the work of an artisan who sought to fashion a sweater worthy of pairing with the fabled golden pantaloons. While much ink has been spilled in the quest for its origins, wearers do find that they are ever so slightly lucky, as though some kindly being is watching over them. Even though the Sweater seems uncomfortable to wear,  it actually fits everybody nicely. Wearing the sweater gives you a warm and fuzzy feeling - and a strange longing for turnips.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 19-20)
+– Armor Class: +1
+– Saving Throws: +1
+– Find Traps: +5%
+– Pick Pockets: +5%
+– Move Silently: +5%
+– Hide In Shadows: +5%
+– Detect Illusion: +5%
+– Set Traps: +5%
+– Luck: +1
+
+Weight: 0~
+@1038 = ~Ooh! What's this? It's all warm and fuzzy.~
+@1039 = ~Nice lucky sweater! With some Elven Holy Water, nuts from the Tree of Life, and 5,000 gold pieces, Cespenar can make this even better!~
+@1040 = ~Cespenar can wash your sweater with the Elven Holy Water and nuts from the Tree of Life to make it ALLLLLL better. It will cost 5,000 gold.~
+@1041 = ~Smells funny in here, you needs to clean.~
