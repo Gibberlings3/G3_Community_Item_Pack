@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/g3cip/backup~
 SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mods/~
 
-VERSION ~Nightly_102524~
+VERSION ~Nightly_102624~
 
 README ~g3cip/languages/%LANGUAGE%/readme-g3cip.html~ ~g3cip/readme-g3cip.html~
 
