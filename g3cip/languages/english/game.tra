@@ -322,4 +322,33 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0~
-    
+@1046 = ~Vampiric Dart of Eternal Hunger~
+@1047 = ~Once held by the notorious necromancer Szass Tam, the lich lord of Thay, the Vampiric Dart of Eternal Hunger embodies the perpetual craving of the undead. Forged through a gruesome ritual involving the sacrificial blood of a hundred innocents from the realm of Aglarond, the dart is a vessel of insatiable thirst. When held, it feels unnaturally cold, and a faint pulse can be sensed, mirroring a heartbeat that no longer exists.
+
+Its thirst for life is particularly potent against the pure-hearted, drawing greater sustenance from their virtuous souls. The dart's hunger extends to magic itself, occasionally reigniting the fading embers of the wielder's own spells. However, the wielder must be cautious, for the dart demands a price, sipping away a fragment of their vitality upon being equipped.
+
+STATISTICS:
+
+Charge abilities:
+– Vampiric Touch once per day
+  Special: Target loses 6d6 Hit Points that are added to the caster's current Hit Points
+  Area of Effect: 1 creature
+  Duration: 1 hour
+
+Equipped abilities:
+– Upon equipping, the dart drinks some of the wielder's blood, temporarily reducing Constitution by 1 point up to once per 24 hours
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+– 20% chance to steal 1d4 Hit Points from the target
+– 5% chance to restore one forgotten spell slot to the wielder (up to fourth level)
+
+THAC0: +4
+Damage: 1d3+4, +1 vs. good creatures
+Damage type: Missile
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+

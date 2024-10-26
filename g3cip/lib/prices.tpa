@@ -19,5 +19,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY g3c_prices BEGIN
   g3cluck0 => 4000  // The Lucky Sweater by StummvonBordwehr
   g3cluck1 => 5000  // The Lucky Sweater [upgraded] by StummvonBordwehr
   g3clsoul => 2500  //  Dart of the Lethargic Soul by Marzx13
+  g3cvamp  => 5500  //  Dart of the Lethargic Soul by Marzx13
 
 END

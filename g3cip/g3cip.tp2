@@ -25,13 +25,16 @@ BEGIN @1 DESIGNATED 1
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt bg2 tob~ @2
 LABEL ~g3_community_item_pack~
 
+INCLUDE ~g3cip/lib/functions.tpa~
+
 /////                                                  \\\\\
 ///// 2da/ids edits                                    \\\\\
 /////                                                  \\\\\
   
 APPEND ~tooltip.2da~ 
 ~g3ccgsd 12080 12018 -1
-g3ccsm 15211 24839 -1~
+g3ccsm 15211 24839 -1
+g3cvamp 15527 12071 -1~
 
 COPY_EXISTING ~splstate.ids~ ~override~
   SET g3brush_red = 0
@@ -61,6 +64,17 @@ ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BE
 %g3brush_redgreen% g3brush_redgreen~
   
 END  
+
+/////                                                  \\\\\
+///// artwork                                          \\\\\
+/////                                                  \\\\\
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1027) STR_VAR bam_file = g3cexecd RET g3exec = icon END
+
+COPY_EXISTING ~icblesai.vvc~ ~override/g3cexecx.vvc~
+  WRITE_ASCII 0x08 ~g3cexecx~ #8
+
+COPY ~g3cip/bam~ ~override~
   
 /////                                                  \\\\\
 ///// scripting/dialogue                               \\\\\
@@ -200,6 +214,11 @@ COPY ~g3cip/itm/g3cspike.itm~ ~override~
 COPY ~g3cip/itm/g3clsoul.itm~ ~override~
   SAY 0x0c @1044 // identified name
   SAY 0x54 @1045 // identified description
+
+// Vampiric Dart of Eternal Hunger by Marzx13
+COPY ~g3cip/itm/g3cvamp.itm~ ~override~
+  SAY 0x0c @1046 // identified name
+  SAY 0x54 @1047 // identified description
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
@@ -212,11 +231,13 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3cspika.spl~ ~override~
      ~g3cip/spl/g3cspikb.spl~ ~override~
      ~g3cip/spl/g3cspikc.spl~ ~override~
+     ~g3cip/spl/g3cvamp.spl~  ~override~
 
 // Executioner Putty by Giovanski
 COPY ~g3cip/spl/g3cexec.spl~ ~override~
   SAY 0x08 @1027 // identified name
   SAY 0x50 @1028 // identified description
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = g3exec END 
   
 ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
 
@@ -266,6 +287,7 @@ COPY_EXISTING ~mage18z.cre~ ~override~
 COPY ~g3cip/wav/g3ccourt.wav~ ~override~
      ~g3cip/eff/g3clunar.eff~ ~override~
      ~g3cip/eff/g3ctinkr.eff~ ~override~
+     ~g3cip/eff/g3cvamp.eff~  ~override~
 
 /////                                                  \\\\\
 ///// pricing                                          \\\\\
