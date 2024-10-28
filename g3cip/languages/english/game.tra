@@ -80,7 +80,6 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Saving Throws: +1
 – Find Traps: +5%
 – Pick Pockets: +5%
 – Move Silently: +5%
@@ -384,3 +383,21 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0~
+@1060 = ~Elysian Runeblade: +%attack% attack, +%defense% defense~
+@1061 = ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It's obvious a lot of time and effort went into its creation, and although not apparent at first, a slight blue glow can be seen emanating from the runes.
+
+Equipped abilities:
+– Physical Damage Resistance: +5%
+– Saving Throws: +1
+– Armor Class: +%defense%
+
+THAC0: +%attack%
+Damage: 2d4+%attack%
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7~

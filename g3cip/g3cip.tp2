@@ -64,6 +64,8 @@ ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BE
 %g3brush_redgreen% g3brush_redgreen~
   
 END  
+  
+COPY ~g3cip/2da/g3crune.2da~  ~override~ 
 
 /////                                                  \\\\\
 ///// artwork                                          \\\\\
@@ -234,6 +236,27 @@ COPY ~g3cip/itm/g3cvamp.itm~ ~override~
 COPY ~g3cip/itm/g3cacid.itm~ ~override~
   SAY 0x0c @1058 // identified name
   SAY 0x54 @1059 // identified description
+  
+OUTER_FOR (attack = 0 ; attack < 5 ; ++attack) BEGIN 
+
+  OUTER_SET defense = (4 - attack)
+  OUTER_SPRINT name @1060
+  OUTER_SPRINT desc @1061
+
+  COPY ~g3cip/itm/g3crune.itm~ ~override/g3crune%attack%.itm~
+    SAY_EVALUATED 0x0c ~%name%~ // identified name
+    SAY_EVALUATED 0x54 ~%desc%~ // identified description
+    PATCH_IF defense BEGIN 
+      LPF ADD_ITEM_EQEFFECT INT_VAR insert_point = 0 opcode = 0 target = 1 timing = 2 parameter1 = defense END  
+    END  
+    LPF ALTER_HEADER INT_VAR match_type = 1 to_hit = attack damage = attack END
+    
+  COPY ~g3cip/spl/g3crune0.spl~ ~override/g3crune%attack%.spl~  
+    SAY_EVALUATED 0x08 ~%name%~ // identified name
+    LPF ALTER_EFFECT INT_VAR match_opcode = 122 STR_VAR resource = EVAL ~g3crune%attack%~ END
+    
+END
+    
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
