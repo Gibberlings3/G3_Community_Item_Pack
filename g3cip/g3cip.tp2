@@ -183,7 +183,7 @@ COPY ~g3cip/itm/g3cexec.itm~ ~override~
   SAY 0x0c @1025 // identified name
   SAY 0x54 @1026 // identified description
   
-ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN 
+ACTION_IF g3brush_redgreen BEGIN 
 
   // The Realmshaper's Brush by CrevsDaak
   COPY ~g3cip/itm/g3cbrush.itm~ ~override~
@@ -249,7 +249,7 @@ COPY ~g3cip/spl/g3cexec.spl~ ~override~
   SAY 0x50 @1028 // identified description
   LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = g3exec END 
   
-ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
+ACTION_IF g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
 
   COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrur0.spl~ 
     LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_red  END
@@ -298,6 +298,11 @@ COPY ~g3cip/wav/g3ccourt.wav~ ~override~
      ~g3cip/eff/g3clunar.eff~ ~override~
      ~g3cip/eff/g3ctinkr.eff~ ~override~
      ~g3cip/eff/g3cvamp.eff~  ~override~
+  
+COPY ~g3cip/sto/g3cmerch.sto~ ~override~
+  PATCH_IF g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
+    LPF ADD_STORE_ITEM_EX STR_VAR item_name = g3cbrush position = "AFTER g3cgraze" flags = identified END
+  END
 
 /////                                                  \\\\\
 ///// pricing                                          \\\\\
