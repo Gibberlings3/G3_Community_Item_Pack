@@ -229,6 +229,11 @@ COPY ~g3cip/itm/g3clsoul.itm~ ~override~
 COPY ~g3cip/itm/g3cvamp.itm~ ~override~
   SAY 0x0c @1046 // identified name
   SAY 0x54 @1047 // identified description
+
+// Dart of the Severing Mist by Marzx13
+COPY ~g3cip/itm/g3cacid.itm~ ~override~
+  SAY 0x0c @1058 // identified name
+  SAY 0x54 @1059 // identified description
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
@@ -242,6 +247,7 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3cspikb.spl~ ~override~
      ~g3cip/spl/g3cspikc.spl~ ~override~
      ~g3cip/spl/g3cvamp.spl~  ~override~
+     ~g3cip/spl/g3cacid.spl~  ~override~ // Dart of the Severing Mist retaliation spell
 
 // Executioner Putty by Giovanski
 COPY ~g3cip/spl/g3cexec.spl~ ~override~

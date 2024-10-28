@@ -361,3 +361,26 @@ Weight: 0~
 @1055 = ~Welcome back, adventurer.~
 @1056 = ~The hero of Trademeet, <HIMHER>self! Thank you and greetings.~
 @1057 = ~We're in no need of your goods today.~
+@1058 = ~Dart of the Severing Mist~
+@1059 = ~An artifact of the legendary necromancer Acererak, the Dart of the Severing Mist is a weapon of unparalleled lethality. Enshrouded in a corrosive fog drawn from the Demiplane of Acid, this dart doesn't merely wound—it severs the very thread of life. The mist that envelops it is said to dissolve flesh and bone in an instant, explaining how such a small weapon can produce a Vorpal effect.
+
+The wielder is enveloped in the same corrosive mist, granting them the benefits of Ko'Zedaz's Caustic Shell. This acid-infused barrier not only protects against similar attacks but also harms those who dare strike the wielder, marking them with the dart's deadly essence.
+
+This dart is a relic of epic power, its mere presence commanding respect and fear. It is a testament to Acererak's mastery over life and death, and few weapons in existence can rival its deadly efficiency.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+– Acid Resistance: +20%
+– 5% chance per hit of a vorpal hit (instant death by decapitation)
+– 3 points of acid damage to any who damage the wielder
+
+THAC0: +5
+Damage: 1d3+5, +1d3 acid 
+Damage type: Missile
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
