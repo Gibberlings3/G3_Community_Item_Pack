@@ -38,3 +38,35 @@ APPEND BOTSMITH
   END
 
 END 
+
+BEGIN g3cmerch
+
+  IF ~NumTimesTalkedTo(0)~ THEN BEGIN InitialMeeting SAY @1049
+   IF ~~ THEN REPLY @1050 GOTO Farewell
+   IF ~Global("geniesgone","GLOBAL",0)~ THEN REPLY @1051 GOTO CantSeeStore
+   IF ~!Global("geniesgone","GLOBAL",0)~ THEN REPLY @1051 GOTO OpenStore
+  END  
+
+  IF ~~ THEN BEGIN Farewell SAY @1052
+    IF ~~ THEN EXIT
+  END  
+
+  IF ~~ THEN BEGIN CantSeeStore SAY @1053
+    IF ~~ THEN EXIT
+  END  
+
+  IF ~~ THEN BEGIN OpenStore SAY @1054
+    IF ~~ THEN DO ~StartStore("g3cmerch",LastTalkedToBy())~ EXIT
+  END  
+
+  IF ~!Dead("cefald01")~ THEN BEGIN GenericMeeting SAY @1055
+   IF ~~ THEN REPLY @1050 GOTO Farewell
+   IF ~Global("geniesgone","GLOBAL",0)~ THEN REPLY @1051 GOTO CantSeeStore
+   IF ~!Global("geniesgone","GLOBAL",0)~ THEN REPLY @1051 GOTO OpenStore
+  END  
+
+  IF ~Dead("cefald01")~ THEN BEGIN HeroMeeting SAY @1056
+   IF ~~ THEN REPLY @1057 GOTO Farewell
+   IF ~Global("geniesgone","GLOBAL",0)~ THEN REPLY @1051 GOTO CantSeeStore
+   IF ~!Global("geniesgone","GLOBAL",0)~ THEN REPLY @1051 GOTO OpenStore
+  END  
