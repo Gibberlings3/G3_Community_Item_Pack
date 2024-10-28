@@ -77,6 +77,15 @@ COPY_EXISTING ~icblesai.vvc~ ~override/g3cexecx.vvc~
 COPY ~g3cip/bam~ ~override~
   
 /////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+
+// Gilbert Lington the Third
+COPY ~g3cip/cre/g3cmerch.cre~ ~override~
+  SAY 0x08 @1048 // name
+  SAY 0x0c @1048 // tooltip
+
+/////                                                  \\\\\
 ///// scripting/dialogue                               \\\\\
 /////                                                  \\\\\
 
@@ -102,7 +111,8 @@ END
   END
   BUT_ONLY
   
-EXTEND_BOTTOM ~botsmith.bcs~ ~g3cip/baf/botsmith.baf~
+EXTEND_BOTTOM ~ar2000.bcs~   ~g3cip/baf/ar2000.baf~   // spawn merchant
+EXTEND_BOTTOM ~botsmith.bcs~ ~g3cip/baf/botsmith.baf~ // cespenar's item upgrade
 
 /////                                                  \\\\\
 ///// items                                            \\\\\

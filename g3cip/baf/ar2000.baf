@@ -1,0 +1,7 @@
+IF
+	Global("g3cmerchspawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("g3cmerchspawn","GLOBAL",1)
+    CreateCreature("g3cmerch",[936.2670],1)
+END
