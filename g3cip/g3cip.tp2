@@ -327,6 +327,11 @@ COPY_EXISTING ~demfig02.cre~ ~override~
   REPLACE_CRE_ITEM ~g3crunez~ #0 #100 #0 ~none~ ~weapon2~ 
   BUT_ONLY 
   
+// place Vampiric Dart of Eternal Hunger by Marzx13 on N'ashtar
+COPY_EXISTING ~gpmage1.cre~ ~override~
+  ADD_CRE_ITEM ~g3cvamp~ #0 #1 #0 ~none~ ~weapon~ EQUIP
+  BUT_ONLY 
+  
 /////                                                  \\\\\
 ///// misc                                             \\\\\
 /////                                                  \\\\\
