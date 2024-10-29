@@ -71,7 +71,8 @@ COPY ~g3cip/2da/g3crune.2da~  ~override~
 ///// artwork                                          \\\\\
 /////                                                  \\\\\
 
-LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1027) STR_VAR bam_file = g3cexecd RET g3exec = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1027) STR_VAR bam_file = g3cexecd RET g3exec  = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1064) STR_VAR bam_file = g3cbdbd  RET g3cbdbd = icon END
 
 COPY_EXISTING ~icblesai.vvc~ ~override/g3cexecx.vvc~
   WRITE_ASCII 0x08 ~g3cexecx~ #8
@@ -236,6 +237,11 @@ COPY ~g3cip/itm/g3cvamp.itm~ ~override~
 COPY ~g3cip/itm/g3cacid.itm~ ~override~
   SAY 0x0c @1058 // identified name
   SAY 0x54 @1059 // identified description
+
+// Black Dragon Belt by zenblack
+COPY ~g3cip/itm/g3cbdb.itm~ ~override~
+  SAY 0x0c @1062 // identified name
+  SAY 0x54 @1063 // identified description
   
 OUTER_FOR (attack = 0 ; attack < 5 ; ++attack) BEGIN 
 
@@ -313,6 +319,12 @@ COPY_EXISTING ~spcl321.spl~ ~override~ // berserker enrage ability
   LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 146 target = 1 parameter2 = 1 timing = 1 resist_dispel = 2 STR_VAR resource = g3cspikb END
   LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 146 target = 1 parameter2 = 1 timing = 1 resist_dispel = 2 STR_VAR resource = g3cspika END
 
+// Black Dragon Belt by zenblack
+COPY ~g3cip/spl/g3cbdb0.spl~ ~override~
+     ~g3cip/spl/g3cbdbd.spl~ ~override~
+  SAY 0x08 @1064 // name
+  LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 142 parameter2 = g3cbdbd END 
+
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
 /////                                                  \\\\\
@@ -340,6 +352,8 @@ COPY ~g3cip/wav/g3ccourt.wav~ ~override~
      ~g3cip/eff/g3clunar.eff~ ~override~
      ~g3cip/eff/g3ctinkr.eff~ ~override~
      ~g3cip/eff/g3cvamp.eff~  ~override~
+     ~g3cip/eff/g3cbdb0d.eff~ ~override~
+     ~g3cip/eff/g3cbdbf.eff~  ~override~
   
 COPY ~g3cip/sto/g3cmerch.sto~ ~override~
   PATCH_IF g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 

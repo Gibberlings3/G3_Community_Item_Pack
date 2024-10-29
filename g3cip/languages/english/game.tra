@@ -401,3 +401,18 @@ Requires:
  11 Strength
 
 Weight: 7~
+@1062 = ~Black Dragon Belt~
+@1063 = ~When the magical component for this item, a living Black Dragon, was transformed by the mage creating the magic item he did not know there was a halfling thief still alive in its belly wasting away as his potion of acid resistance was wearing off. The soul of the thief was trapped in the item and as such he refuses to work for anyone not skilled in thieving arts.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Breath: +1
+– Resistance to Magic Damage: +20%
+– Hide In Shadows: +10%
+– 20% of Caustic Sheath when attacked
+  Special: +50% Acid Resistance, 1d6+6 acid damage if hit, attacks deal an additional +3 Acid Damage.
+  Duration: 4 rounds
+
+Weight: 2~
+@1064 = ~Caustic Sheath~
