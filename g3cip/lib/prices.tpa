@@ -21,5 +21,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY g3c_prices BEGIN
   g3clsoul => 2500  // Dart of the Lethargic Soul by Marzx13
   g3cvamp  => 5500  // Vampiric Dart of Eternal Hunger by Marzx13
   g3cacid  => 9800  // Dart of the Severing Mist by Marzx13
+  g3crune0 => 8800  // Elysian Runeblade by Brutalitops
+  g3crune1 => 8800  // Elysian Runeblade by Brutalitops
+  g3crune2 => 8800  // Elysian Runeblade by Brutalitops
+  g3crune3 => 8800  // Elysian Runeblade by Brutalitops
+  g3crune4 => 8800  // Elysian Runeblade by Brutalitops
+  g3crunez => 8800  // Elysian Runeblade by Brutalitops
 
 END

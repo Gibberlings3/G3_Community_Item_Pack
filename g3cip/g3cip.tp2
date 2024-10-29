@@ -256,6 +256,9 @@ OUTER_FOR (attack = 0 ; attack < 5 ; ++attack) BEGIN
     LPF ALTER_EFFECT INT_VAR match_opcode = 122 STR_VAR resource = EVAL ~g3crune%attack%~ END
     
 END
+
+COPY_EXISTING ~g3crune3.itm~ ~override/g3crunez.itm~ // initial version that needs ID
+  WRITE_SHORT 0x42 80 // assign lore
     
   
 /////                                                  \\\\\
@@ -319,6 +322,11 @@ COPY_EXISTING ~mage18z.cre~ ~override~
   ADD_CRE_ITEM ~g3cakk~ #1 #0 #0 ~none~ ~ring~
   BUT_ONLY 
 
+// place runeblade
+COPY_EXISTING ~demfig02.cre~ ~override~
+  REPLACE_CRE_ITEM ~g3crunez~ #0 #100 #0 ~none~ ~weapon2~ 
+  BUT_ONLY 
+  
 /////                                                  \\\\\
 ///// misc                                             \\\\\
 /////                                                  \\\\\
