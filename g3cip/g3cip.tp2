@@ -77,6 +77,10 @@ LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1064) STR_VAR bam_fil
 COPY_EXISTING ~icblesai.vvc~ ~override/g3cexecx.vvc~
   WRITE_ASCII 0x08 ~g3cexecx~ #8
 
+COPY_EXISTING ~spfiresa.vvc~ ~override/g3cbdb0a.vvc~
+              ~spfiresb.vvc~ ~override/g3cbdb0b.vvc~
+  WRITE_ASCII 0x08 ~g3cbdbx~ #8
+
 COPY ~g3cip/bam~ ~override~
   
 /////                                                  \\\\\
