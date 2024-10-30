@@ -82,15 +82,6 @@ COPY_EXISTING ~spfiresa.vvc~ ~override/g3cbdb0a.vvc~
   WRITE_ASCII 0x08 ~g3cbdbx~ #8
 
 COPY ~g3cip/bam~ ~override~
-  
-/////                                                  \\\\\
-///// creatures                                        \\\\\
-/////                                                  \\\\\
-
-// Gilbert Lington the Third
-COPY ~g3cip/cre/g3cmerch.cre~ ~override~
-  SAY 0x08 @1048 // name
-  SAY 0x0c @1048 // tooltip
 
 /////                                                  \\\\\
 ///// scripting/dialogue                               \\\\\
@@ -328,14 +319,24 @@ COPY ~g3cip/spl/g3cbdb0.spl~ ~override~
      ~g3cip/spl/g3cbdbd.spl~ ~override~
   SAY 0x08 @1064 // name
   LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 142 parameter2 = g3cbdbd END 
-
+  
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
 /////                                                  \\\\\
+
+// Gilbert Lington the Third
+COPY ~g3cip/cre/g3cmerch.cre~ ~override~
+  SAY 0x08 @1048 // name
+  SAY 0x0c @1048 // tooltip
   
 // place battleblade
 COPY_EXISTING ~mage18z.cre~ ~override~
   ADD_CRE_ITEM ~g3cakk~ #1 #0 #0 ~none~ ~ring~
+  BUT_ONLY 
+  
+// place severing mist to il-khan battlemage
+COPY_EXISTING ~gromg05.cre~ ~override~
+  ADD_CRE_ITEM ~g3cacid~ #0 #0 #0 ~none~ ~weapon~ EQUIP
   BUT_ONLY 
 
 // place runeblade
