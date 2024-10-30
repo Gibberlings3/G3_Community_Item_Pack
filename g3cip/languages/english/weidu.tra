@@ -1,3 +1,7 @@
 @1 = ~G3 Community Item Pack~
 @2 = ~This mod is not available for your game. It requires BG2 content.~
 @3 = ~The Realmshaper's Brush cannot be installed: not enough spellstates available.~
+@4 = ~Items can summon Cowled Wizards~
+@5 = ~Items do not summon Cowled Wizards~
+@6 = ~Warning: Parameters not specified for cd_no_more_cws function~
+@7 = ~Warning: Spell and/or item not found for cd_no_more_cws function~

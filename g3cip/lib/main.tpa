@@ -1,0 +1,420 @@
+/* todo for original
+
+check caustic sheath circle animation
+
+for originals remove
+  realmshaper's brush
+  slippery court
+  cloak of sound rest
+  
+portrait icons
+  black dragon belt
+  executioner putty
+  
+lunar shards - swap specific enchantment
+
+timkerer's spectacles, remove confusion?
+
+belt of urdunnir - racial bonuses, possibly remove
+
+vamp dart - change HP drain
+*/
+
+OUTER_SET enhanced_edition = 0
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN OUTER_SET enhanced_edition = 1 END
+
+INCLUDE ~g3cip/lib/functions.tpa~
+
+/////                                                  \\\\\
+///// 2da/ids edits                                    \\\\\
+/////                                                  \\\\\
+  
+APPEND ~tooltip.2da~ 
+~g3ccgsd 12080 12018 -1
+g3ccsm 15211 24839 -1
+g3cvamp 15527 12071 -1~
+
+ACTION_IF enhanced_edition BEGIN 
+
+  COPY_EXISTING ~splstate.ids~ ~override~
+    SET g3brush_red = 0
+    SET g3brush_green = 0
+    SET g3brush_blue = 0
+    SET g3brush_redgreen = 0
+    FOR (index = 127 ; index < 256 ; ++index) BEGIN
+      SET found = 0
+      REPLACE_EVALUATE ~^\(%index%[ %TAB%]+\)~ BEGIN
+        SET found = 1
+      END ~%MATCH1%~ 
+      PATCH_IF !found BEGIN
+        PATCH_IF !g3brush_red      BEGIN SET g3brush_red = index      END ELSE
+        PATCH_IF !g3brush_green    BEGIN SET g3brush_green = index    END ELSE
+        PATCH_IF !g3brush_blue     BEGIN SET g3brush_blue = index     END ELSE
+        PATCH_IF !g3brush_redgreen BEGIN SET g3brush_redgreen = index SET index = 256 END 
+      END
+    END
+    BUT_ONLY  
+    
+  ACTION_IF g3brush_red AND g3brush_green AND g3brush_blue AND g3brush_redgreen BEGIN 
+
+    APPEND ~splstate.ids~ 
+  ~%g3brush_red% g3brush_red
+  %g3brush_green% g3brush_green
+  %g3brush_blue% g3brush_blue
+  %g3brush_redgreen% g3brush_redgreen~
+    
+  END  
+  
+END 
+
+COPY ~g3cip/2da/g3crune.2da~  ~override~ 
+
+/////                                                  \\\\\
+///// artwork                                          \\\\\
+/////                                                  \\\\\
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1027) STR_VAR bam_file = g3cexecd RET g3exec  = icon END
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1064) STR_VAR bam_file = g3cbdbd  RET g3cbdbd = icon END
+
+COPY_EXISTING ~icblesai.vvc~ ~override/g3cexecx.vvc~
+  WRITE_ASCII 0x08 ~g3cexecx~ #8
+
+COPY_EXISTING ~spfiresa.vvc~ ~override/g3cbdb0a.vvc~
+              ~spfiresb.vvc~ ~override/g3cbdb0b.vvc~
+  WRITE_ASCII 0x08 ~g3cbdbx~ #8
+
+COPY ~g3cip/bam~ ~override~
+
+/////                                                  \\\\\
+///// scripting/dialogue                               \\\\\
+/////                                                  \\\\\
+
+COMPILE ~g3cip/dlg/g3cip.d~
+
+COPY_EXISTING ~mage18z.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(SetGlobal("SpellTrigger","LOCALS",1)[%LNL%%MNL%%WNL% %TAB%]+END\)~ ~\1
+    
+IF
+	See(NearestEnemyOf(Myself))
+	HasItem("g3cakk",Myself)
+  Range(NearestEnemyOf(Myself),5)
+	Global("g3cakk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("g3cakk","LOCALS",1)
+		//UseItem("g3cakk",Myself)
+    DisplayString(Myself,@1020)
+    ApplySpell(Myself,NPC_BLADE_BARRIER)
+END
+~
+  END
+  BUT_ONLY
+  
+EXTEND_BOTTOM ~ar2000.bcs~   ~g3cip/baf/ar2000.baf~   // spawn merchant
+EXTEND_BOTTOM ~botsmith.bcs~ ~g3cip/baf/botsmith.baf~ // cespenar's item upgrade
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
+ACTION_IF enhanced_edition BEGIN 
+  
+  // Slippery Court by lynx
+  COPY ~g3cip/itm/g3ccourt.itm~ ~override~
+    SAY 0x0c @1010 // identified name
+    SAY 0x54 @1011 // identified description
+    
+  ACTION_IF g3brush_redgreen BEGIN 
+
+    // The Realmshaper's Brush by CrevsDaak
+    COPY ~g3cip/itm/g3cbrush.itm~ ~override~
+      SAY 0x0c @1029 // identified name
+      SAY 0x54 @1030 // identified description
+      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_red   STR_VAR match_resource = g3cbrusr END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_green STR_VAR match_resource = g3cbrusg END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_blue  STR_VAR match_resource = g3cbrusb END
+      
+  END
+
+  // Cloak of Sound Rest by subtledoctor
+  COPY ~g3cip/itm/g3crest.itm~ ~override~
+    SAY 0x0c @1065 // identified name
+    SAY 0x54 @1066 // identified description
+
+END
+
+// Akkabar's Battleblade by WanderingScholar
+COPY ~g3cip/itm/g3cakk.itm~ ~override~
+  SAY 0x0c @1000 // identified name
+  SAY 0x54 @1001 // identified description
+  
+// A Caster’s Guide to Self-Defense by GlitterGear
+COPY ~g3cip/itm/g3ccgsd.itm~ ~override~
+  SAY 0x0c @1002 // identified name
+  SAY 0x54 @1003 // identified description
+  
+// Countability in Summoning Matrices
+COPY ~g3cip/itm/g3ccsm.itm~ ~override~
+  SAY 0x0c @1004 // identified name
+  SAY 0x54 @1005 // identified description
+  
+// The Power of Real Change
+COPY ~g3cip/itm/g3cprc.itm~ ~override~
+  SAY 0x0c @1006 // identified name
+  SAY 0x54 @1007 // identified description
+  
+// Vine Shield by Mithradates
+COPY ~g3cip/itm/g3cvine.itm~ ~override~
+  SAY 0x0c @1008 // identified name
+  SAY 0x54 @1009 // identified description
+  
+// Graze by Thacobell
+COPY ~g3cip/itm/g3cgraze.itm~ ~override~
+  SAY 0x0c @1012 // identified name
+  SAY 0x54 @1013 // identified description
+
+// Lunar Shards by suy
+COPY ~g3cip/itm/g3clunar.itm~ ~override~
+  SAY 0x0c @1014 // identified name
+  SAY 0x54 @1015 // identified description
+
+// Never Alone by cdx
+COPY ~g3cip/itm/g3cnever.itm~ ~override~
+  SAY 0x0c @1016 // identified name
+  SAY 0x54 @1017 // identified description
+
+// Tinkerer's Spectacles by cdx
+COPY ~g3cip/itm/g3ctinkr.itm~ ~override~
+  SAY 0x0c @1018 // identified name
+  SAY 0x54 @1019 // identified description
+
+// Belt of Urdunnir by DiesIrae
+COPY ~g3cip/itm/g3curd.itm~ ~override~
+  SAY 0x0c @1021 // identified name
+  SAY 0x54 @1022 // identified description
+
+// Peril-Sensitive Goggles by jmerry
+COPY ~g3cip/itm/g3cperil.itm~ ~override~
+  SAY 0x0c @1023 // identified name
+  SAY 0x54 @1024 // identified description
+
+// Executioner Putty by Giovanski
+COPY ~g3cip/itm/g3cexec.itm~ ~override~
+  SAY 0x0c @1025 // identified name
+  SAY 0x54 @1026 // identified description
+
+// Robe of the Archmage Jasteya by Prof Errata
+COPY ~g3cip/itm/g3cjast.itm~ ~override~
+  SAY 0x0c @1031 // identified name
+  SAY 0x54 @1032 // identified description
+
+// Emerald Ioun Stone by Prof Errata
+COPY ~g3cip/itm/g3cemer.itm~ ~override~
+  SAY 0x0c @1033 // identified name
+  SAY 0x54 @1034 // identified description
+
+// The Lucky Sweater by StummvonBordwehr
+COPY ~g3cip/itm/g3cluck0.itm~ ~override~
+  SAY 0x0c @1035 // identified name
+  SAY 0x54 @1036 // identified description
+
+// The Lucky Sweater [upgraded] by StummvonBordwehr
+COPY ~g3cip/itm/g3cluck1.itm~ ~override~
+  SAY 0x0c @1035 // identified name
+  SAY 0x54 @1037 // identified description
+
+// Spiked Armor by a.greene
+COPY ~g3cip/itm/g3cspike.itm~ ~override~
+  SAY 0x08 @1042 // identified name
+  SAY 0x50 @1043 // identified description
+
+// Dart of the Lethargic Soul by Marzx13
+COPY ~g3cip/itm/g3clsoul.itm~ ~override~
+  SAY 0x0c @1044 // identified name
+  SAY 0x54 @1045 // identified description
+
+// Vampiric Dart of Eternal Hunger by Marzx13
+COPY ~g3cip/itm/g3cvamp.itm~ ~override~
+  SAY 0x0c @1046 // identified name
+  SAY 0x54 @1047 // identified description
+
+// Dart of the Severing Mist by Marzx13
+COPY ~g3cip/itm/g3cacid.itm~ ~override~
+  SAY 0x0c @1058 // identified name
+  SAY 0x54 @1059 // identified description
+
+// Black Dragon Belt by zenblack
+COPY ~g3cip/itm/g3cbdb.itm~ ~override~
+  SAY 0x0c @1062 // identified name
+  SAY 0x54 @1063 // identified description
+  
+OUTER_FOR (attack = 0 ; attack < 5 ; ++attack) BEGIN 
+
+  OUTER_SET defense = (4 - attack)
+  OUTER_SPRINT name @1060
+  OUTER_SPRINT desc @1061
+
+  COPY ~g3cip/itm/g3crune.itm~ ~override/g3crune%attack%.itm~
+    SAY_EVALUATED 0x0c ~%name%~ // identified name
+    SAY_EVALUATED 0x54 ~%desc%~ // identified description
+    PATCH_IF defense BEGIN 
+      LPF ADD_ITEM_EQEFFECT INT_VAR insert_point = 0 opcode = 0 target = 1 timing = 2 parameter1 = defense END  
+    END  
+    LPF ALTER_HEADER INT_VAR match_type = 1 to_hit = attack damage = attack END
+    
+  COPY ~g3cip/spl/g3crune0.spl~ ~override/g3crune%attack%.spl~  
+    SAY_EVALUATED 0x08 ~%name%~ // identified name
+    LPF ALTER_EFFECT INT_VAR match_opcode = 122 STR_VAR resource = EVAL ~g3crune%attack%~ END
+    
+END
+
+COPY_EXISTING ~g3crune3.itm~ ~override/g3crunez.itm~ // initial version that needs ID
+  WRITE_SHORT 0x42 80 // assign lore
+  
+/////                                                  \\\\\
+///// spells                                           \\\\\
+/////                                                  \\\\\
+
+ACTION_IF enhanced_edition BEGIN 
+  
+  COPY ~g3cip/spl/g3ccoura.spl~ ~override~
+       ~g3cip/spl/g3ccourb.spl~ ~override~
+       ~g3cip/spl/g3cresta.spl~ ~override~ // cloak of sound rest
+       ~g3cip/spl/g3crestb.spl~ ~override~ // cloak of sound rest
+       ~g3cip/spl/g3crestc.spl~ ~override~ // cloak of sound rest
+  
+  ACTION_IF g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
+
+    COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrur0.spl~ 
+      LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_red  END
+
+    COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrug0.spl~ 
+      LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_green  END
+      LPF ALTER_EFFECT INT_VAR match_opcode =   7 parameter1 = 53  END
+
+    COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrub0.spl~ 
+      LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_blue   END
+      LPF ALTER_EFFECT INT_VAR match_opcode =   7 parameter1 = 58  END
+      
+    COPY ~g3cip/spl/g3cbrub1.spl~ ~override~ 
+         ~g3cip/spl/g3cbrub2.spl~ ~override~ 
+         ~g3cip/spl/g3cbrub3.spl~ ~override~ 
+         ~g3cip/spl/g3cbrub4.spl~ ~override~  
+         ~g3cip/spl/g3cbrusb.spl~ ~override~  
+         ~g3cip/spl/g3cbrusn.spl~ ~override~ 
+    
+    COPY ~g3cip/spl/g3cbrusr.spl~ ~override~ 
+      LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_redgreen  END
+    
+    COPY ~g3cip/spl/g3cbrusg.spl~ ~override~ 
+      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_redgreen  END
+      
+  END
+     
+END
+  
+COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
+     ~g3cip/spl/g3ctinkz.spl~ ~override~
+     ~g3cip/spl/g3cspika.spl~ ~override~
+     ~g3cip/spl/g3cspikb.spl~ ~override~
+     ~g3cip/spl/g3cspikc.spl~ ~override~
+     ~g3cip/spl/g3cvamp.spl~  ~override~
+     ~g3cip/spl/g3cacid.spl~  ~override~ // Dart of the Severing Mist retaliation spell
+
+// Executioner Putty by Giovanski
+COPY ~g3cip/spl/g3cexec.spl~ ~override~
+  SAY 0x08 @1027 // identified name
+  SAY 0x50 @1028 // identified description
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 parameter2 = g3exec END 
+
+COPY_EXISTING ~spcl321.spl~ ~override~ // berserker enrage ability
+  LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 146 target = 1 parameter2 = 1 timing = 1 resist_dispel = 2 STR_VAR resource = g3cspikb END
+  LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 146 target = 1 parameter2 = 1 timing = 1 resist_dispel = 2 STR_VAR resource = g3cspika END
+
+// Black Dragon Belt by zenblack
+COPY ~g3cip/spl/g3cbdb0.spl~ ~override~
+     ~g3cip/spl/g3cbdbd.spl~ ~override~
+  SAY 0x08 @1064 // name
+  LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 142 parameter2 = g3cbdbd END 
+  
+/////                                                  \\\\\
+///// creatures                                        \\\\\
+/////                                                  \\\\\
+
+// Gilbert Lington the Third
+COPY ~g3cip/cre/g3cmerch.cre~ ~override~
+  SAY 0x08 @1048 // name
+  SAY 0x0c @1048 // tooltip
+  
+// place battleblade
+COPY_EXISTING ~mage18z.cre~ ~override~
+  ADD_CRE_ITEM ~g3cakk~ #1 #0 #0 ~none~ ~ring~
+  BUT_ONLY 
+  
+// place black dragon belt on Ketta
+COPY_EXISTING ~hlketta.cre~  ~override~
+              ~hlketta2.cre~ ~override~
+  ADD_CRE_ITEM ~g3cbdb~ #0 #0 #0 ~none~ ~belt cloak~
+  BUT_ONLY 
+  
+// place severing mist to il-khan battlemage
+COPY_EXISTING ~gromg05.cre~ ~override~
+  ADD_CRE_ITEM ~g3cacid~ #0 #0 #0 ~none~ ~weapon~ EQUIP
+  BUT_ONLY 
+
+// place runeblade
+COPY_EXISTING ~demfig02.cre~ ~override~
+  REPLACE_CRE_ITEM ~g3crunez~ #0 #100 #0 ~none~ ~weapon2~ 
+  BUT_ONLY 
+  
+// place Vampiric Dart of Eternal Hunger by Marzx13 on N'ashtar
+COPY_EXISTING ~gpmage1.cre~ ~override~
+  ADD_CRE_ITEM ~g3cvamp~ #0 #1 #0 ~none~ ~weapon~ EQUIP
+  BUT_ONLY 
+  
+/////                                                  \\\\\
+///// misc                                             \\\\\
+/////                                                  \\\\\
+
+ACTION_IF enhanced_edition BEGIN 
+  
+  COPY ~g3cip/wav/g3ccourt.wav~ ~override~
+
+END 
+
+COPY ~g3cip/eff/g3clunar.eff~ ~override~
+     ~g3cip/eff/g3ctinkr.eff~ ~override~
+     ~g3cip/eff/g3cvamp.eff~  ~override~
+     ~g3cip/eff/g3cbdb0d.eff~ ~override~
+     ~g3cip/eff/g3cbdbf.eff~  ~override~
+  
+COPY ~g3cip/sto/g3cmerch.sto~ ~override~
+  PATCH_IF enhanced_edition BEGIN 
+    PATCH_IF g3brush_redgreen BEGIN // The Realmshaper's Brush by CrevsDaak 
+      LPF ADD_STORE_ITEM_EX STR_VAR item_name = g3cbrush position = "AFTER g3cgraze" flags = identified END
+    END
+    LPF ADD_STORE_ITEM_EX STR_VAR item_name = g3crest  position = "AFTER g3cluck0" flags = identified END
+    LPF ADD_STORE_ITEM_EX STR_VAR item_name = g3ccourt position = "AFTER g3crest" flags = identified END
+  END  
+    
+
+/////                                                  \\\\\
+///// pricing                                          \\\\\
+/////                                                  \\\\\
+
+INCLUDE ~g3cip/lib/prices.tpa~
+
+ACTION_PHP_EACH g3c_prices AS item => price BEGIN
+
+  COPY_EXISTING ~%item%.itm~ ~override~
+    WRITE_LONG 0x34 ~%price%~
+    BUT_ONLY IF_EXISTS
+
+END 
+  
+ACTION_IF !g3brush_redgreen BEGIN 
+
+  PRINT @3
+  
+END  

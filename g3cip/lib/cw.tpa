@@ -1,0 +1,38 @@
+DEFINE_ACTION_FUNCTION cd_no_more_cws
+  STR_VAR spell_original  = ""
+          spell_duplicate = ""
+          resource        = ""
+  BEGIN
+  
+  ACTION_IF (("%spell_original%"  STRING_COMPARE_CASE "" = 0) OR 
+             ("%spell_duplicate%" STRING_COMPARE_CASE "" = 0) OR 
+             ("%resource%"        STRING_COMPARE_CASE "" = 0)) BEGIN
+    WARN @6   
+  END ELSE BEGIN  
+    ACTION_IF !FILE_EXISTS_IN_GAME ~%spell_original%.spl~ OR !FILE_EXISTS_IN_GAME ~%resource%~ BEGIN
+      WARN @7
+    END ELSE BEGIN  
+    
+      COPY_EXISTING ~%spell_original%.spl~ ~override/%spell_duplicate%.spl~
+        WRITE_SHORT 0x1c 4 // spell type: innate
+        WRITE_LONG  0x34 1 // spell level
+        
+      COPY_EXISTING ~%resource%~ ~override~
+        LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 146 STR_VAR match_resource = EVAL ~%spell_original%~ resource = EVAL ~%spell_duplicate%~ END 
+        LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 148 STR_VAR match_resource = EVAL ~%spell_original%~ resource = EVAL ~%spell_duplicate%~ END 
+    
+    END
+    
+  END  
+
+END
+
+LAF cd_no_more_cws STR_VAR spell_original = spwi305 spell_duplicate = g3c305 resource = ~g3ccgsd.itm~ END // caster guide to self defense: haste
+LAF cd_no_more_cws STR_VAR spell_original = spwi212 spell_duplicate = g3c212 resource = ~g3ccgsd.itm~ END // caster guide to self defense: mirror image
+LAF cd_no_more_cws STR_VAR spell_original = spwi620 spell_duplicate = g3c620 resource = ~g3ccsm.itm~ END // Countability in Summoning Matrices: fire elemental
+LAF cd_no_more_cws STR_VAR spell_original = spwi621 spell_duplicate = g3c621 resource = ~g3ccsm.itm~ END // Countability in Summoning Matrices: air elemental
+LAF cd_no_more_cws STR_VAR spell_original = spwi212 spell_duplicate = g3c212 resource = ~g3cnever.itm~ END // never alone: mirror image
+LAF cd_no_more_cws STR_VAR spell_original = spwi416 spell_duplicate = g3c416 resource = ~g3cprc.itm~ END // power of real change: poly self
+LAF cd_no_more_cws STR_VAR spell_original = spwi207 spell_duplicate = g3c207 resource = ~g3ctinkr.itm~ END // power of real change: knock
+LAF cd_no_more_cws STR_VAR spell_original = spwi314 spell_duplicate = g3c314 resource = ~g3cvamp.itm~ END // Vampiric Dart of Eternal Hunger: vamp touch
+LAF cd_no_more_cws STR_VAR spell_original = spwi224 spell_duplicate = g3c224 resource = ~g3crestc.spl~ END // cloak of sound rest: glitterdust
