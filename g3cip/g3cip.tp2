@@ -260,7 +260,11 @@ END
 
 COPY_EXISTING ~g3crune3.itm~ ~override/g3crunez.itm~ // initial version that needs ID
   WRITE_SHORT 0x42 80 // assign lore
-    
+
+// Cloak of Sound Rest by subtledoctor
+COPY ~g3cip/itm/g3crest.itm~ ~override~
+  SAY 0x0c @1065 // identified name
+  SAY 0x54 @1066 // identified description
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
@@ -275,6 +279,9 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3cspikc.spl~ ~override~
      ~g3cip/spl/g3cvamp.spl~  ~override~
      ~g3cip/spl/g3cacid.spl~  ~override~ // Dart of the Severing Mist retaliation spell
+     ~g3cip/spl/g3cresta.spl~ ~override~ // cloak of sound rest
+     ~g3cip/spl/g3crestb.spl~ ~override~ // cloak of sound rest
+     ~g3cip/spl/g3crestc.spl~ ~override~ // cloak of sound rest
 
 // Executioner Putty by Giovanski
 COPY ~g3cip/spl/g3cexec.spl~ ~override~

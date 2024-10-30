@@ -28,5 +28,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY g3c_prices BEGIN
   g3crune4 => 8800  // Elysian Runeblade by Brutalitops
   g3crunez => 8800  // Elysian Runeblade by Brutalitops
   g3cbdb   => 11000 // Black Dragon Belt by zenblack
+  g3crest  => 1500  // Cloak of Sound Rest by subtledoctor
 
 END

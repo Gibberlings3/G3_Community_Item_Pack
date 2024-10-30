@@ -416,3 +416,14 @@ Equipped abilities:
 
 Weight: 2~
 @1064 = ~Caustic Sheath~
+@1065 = ~Cloak of Sound Rest~
+@1066 = ~This cloak is light and travels well, but has a soft, downy appearance. It was created for a Duke Jeffa of Sembia, who enacted cruel policies and feared assassination. Once it is attuned to the wearer, which takes one hour, its protective nature will activate. From that moment, if the wearer is struck by a weapon, the cloak will intercept and absorb the strike. At the same time, it will issue a small explosion of glowing motes, similar to a Glitterdust spell, to disorient the attacker, illuminate invisible assailants, and importantly, wake the wearer. Only one attack will be blocked; the magic will reactivate one hour later.
+
+Sadly for Duke Jeffa, the cloak could not protect him from poison administered by his own cook. 
+
+STATISTICS:
+
+Equipped abilities:
+– Block one weapon attack, once per hour. Upon blocking an attack, cast Glitterdust near the wearer. 
+
+Weight: 3~
