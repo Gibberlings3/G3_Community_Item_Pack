@@ -357,7 +357,6 @@ ACTION_IF enhanced_edition BEGIN
   
   COPY ~g3cip/spl/g3ccoura.spl~ ~override~
        ~g3cip/spl/g3ccourb.spl~ ~override~
-       ~g3cip/spl/g3cperil.spl~ ~override~
        ~g3cip/spl/g3cresta.spl~ ~override~ // cloak of sound rest
        ~g3cip/spl/g3crestb.spl~ ~override~ // cloak of sound rest
        ~g3cip/spl/g3crestc.spl~ ~override~ // cloak of sound rest
@@ -396,6 +395,7 @@ COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
      ~g3cip/spl/g3cspikb.spl~ ~override~
      ~g3cip/spl/g3cspikc.spl~ ~override~
      ~g3cip/spl/g3cvamp.spl~  ~override~
+     ~g3cip/spl/g3cperil.spl~ ~override~
      ~g3cip/spl/g3cacid.spl~  ~override~ // Dart of the Severing Mist retaliation spell
   
 COPY ~g3cip/spl/g3cspika.spl~ ~override~
@@ -432,6 +432,16 @@ COPY ~g3cip/spl/g3cbdb0.spl~ ~override~
 // Black Dragon Belt by zenblack
 COPY ~g3cip/spl/g3cbdbd.spl~ ~override~
   SAY 0x08 @1064 // name
+
+ACTION_IF !enhanced_edition BEGIN 
+
+  COPY_EXISTING ~g3cacid.spl~  ~override~
+                ~g3cbdbd.spl~  ~override~
+                ~g3cspikc.spl~ ~override~
+                ~g3cvine.spl~  ~override~
+    LPF ALTER_HEADER INT_VAR projectile = 1 END
+    
+END
   
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
