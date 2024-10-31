@@ -1,0 +1,348 @@
+@1001 = ~The rulers of the Shoon Imperium possessed unique magical rings known as Qysari Rings. The term "qysar," meaning "emperor," was adopted by Amahl Shoon III, the first in a line of imperial rulers. These rings were a subset of shoonrings, magical rings crafted in the Shoon Imperium during Calimshan's sixth age (27 – 450 DR). Shoonrings were distinguished by their specific construction and enchantment methods. According to the slave scribe Rativ ym Shoon, who documented the rings in 356 DR, there were twelve known Qysari Rings. This information was later included in "The Magics of the South" by Zatan Arrowswift, the Herald of Athkatla. However, only ten rings are currently described, with two of those having uncertain origins. 
+
+Akkabar's legendary ring, known as the battleblade ring, held the distinction of being the inaugural Qysari Ring. This remarkable artifact possessed the ability to conjure a barrier of blades when activated by a specific verbal command.
+
+STATISTICS:
+
+Armor Class:  +2 bonus
+
+Special Abilities: 
+ Blade Barrier once per day
+ Special: Creates a wall of circling, razor-sharp blades
+ Duration: 1 turn~
+
+@1003 = ~This book contains helpful advice to any spellcaster who finds themself in combat. Such tips include "run away really fast" and "don't get hit". While these would be unhelpful platitudes in any other book, the author has helpfully included a guide on using magic to follow the advice.
+
+STATISTICS:
+
+Special Abilities: 
+ Haste once per day
+ Special: All creatures affected function at double their normal movement rate
+ Duration: 13 rounds
+ Mirror Image once per day
+ Special: Caster causes from 2 to 8 exact duplicates of <PRO_HIMHER>self to come into being
+ Duration: 13 rounds~
+
+@1005 = ~This esoteric and advanced tome of arcane theory would be beyond those without magical training. While most of the book is focused on the theoretical nature of summoning rituals in regards to the countable Elemental Planes and the uncountable, infinite layers of the Abyss, it does provide a few practical examples that any spellcaster would find useful.
+
+STATISTICS:
+
+Special Abilities: 
+ Summon Fire Elemental once per day
+ Special: A fire elemental is summoned in the vicinity of the caster
+ Duration: 10 turns
+ Summon Air Elemental Image once per day
+ Special: An air elemental is summoned in the vicinity of the caster
+ Duration: 10 turns~
+ 
+@1007 = ~The majority of this book is self-help advice, but in the very last chapter contains arcane methodologies for the truly desperate.
+
+STATISTICS:
+
+Special Abilities: 
+ Polymorph Self once per day
+ Special: The caster is able to assume the form of another creature
+ Duration: 4 turns~
+ 
+@1009 = ~This extraordinary shield is woven from living vines that twist and writhe as if imbued with a life of their own. Over four centuries ago, it was purchased in Sigil, the City of Doors, by a merchant who dealt with an unknown giant race from a distant realm. The shield made its way to Faerûn, where it was acquired by the ranger Elric of the High Forest. Elric used the shield to protect his village from a band of gnoll raiders, the vines ensnaring his foes and turning the tide of battle.
+
+After years of vigilant service, Elric gifted the shield to his apprentice, a young druid named Sylvana. She carried it into the depths of the Cormanthor, where she defended the sacred glades for many years. Sylvana was later ambushed by drow scouts; though she fought valiantly, she was slain, and the shield was taken into the Underdark. There, the shield was sold to a duergar merchant, who traded it to a surface dwarf named Thrain in exchange for rare gemstones.
+
+Thrain brought the shield back to Mithral Hall, where it was wielded by his brother Balin during skirmishes with goblin tribes. In one fierce encounter, Balin fell, and the shield was lost in the chaos. Years later, it resurfaced in the hands of a human mercenary, Katarina of Amn, who claimed to have won it in a game of Dragon Dice. Katarina utilized the shield's entangling vines to capture bounties alive, increasing her notoriety.
+
+Her luck ran out when she was defeated in combat by the paladin Sir Reginald of Athkatla, who took the shield as a prize but found its wild nature incompatible with his disciplined fighting style. He sold it to a Calishite trader, who in turn lost it to pirates off the Sword Coast. The pirate captain, Redbeard Rufus, used the shield during boarding actions until his ship was sunk by a storm, and the shield was believed lost at sea.
+
+Decades later, the Vine Shield washed ashore near Baldur's Gate and was found by a young adventurer. Its journey continues, the living vines ever eager to ensnare new foes, its history etched in the legends of those who have wielded it.
+
+STATISTICS:
+
+Equipped Abilities: Entangles any who damage the wielder for two rounds, save vs. spell at -2 to negate
+
+Armor Class Bonus: 2
+Special: No Missile Weapon Protection
+Weight: 2
+Requires: 4 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+ 
+@1013 = ~Once wielded by a duelist of minor note that sought utmost efficiency in combat. The Graze posseses no destructive enchantments and acts as a normal dagger in training. When used in live combat, the dagger reacts to attacks made against the wielder, moving on its own to minorly deflect attacks.
+
+STATISTICS:
+
+Equipped abilities:
+Armor Class:  +1
+Armor Class:  +1 vs. slashing and piercing weapons
+
+Damage:  1d4 
+Damage type:  piercing
+Weight: 1
+Speed Factor: 2 
+Proficiency Type: Dagger
+Type:  1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~
+ 
+@1015 = ~Legend tells of a humble shepherd whose life was transformed by praying to Selûne bathed by the full moon. After the prayer, a ball of fire fell from the skies, striking the barn, and killing most of his livestock. The man refused to believe that the Moonmaiden would cause such misfortune, so he looked in the debris to see a sign from the goddess. A meteorite was found to be the cause of the impact, and on it scraps of a metal that he believed to be silver, which he related instantly to Selûne. He brought the metal to the temple, where the monks could bless it. Impressed by the shepherd's unwavering faith, they took him in, and taught him the ways of the servants of Selûne. Over time, the new recruit was able to raise enough wealth for the monastery to commission a holy weapon made from the blessed metal. A blacksmith, combining the meteorite's celestial metal with pure silver, forged seven flawless daggers, each representing one of the seven stars in Selûne’s holy symbol.
+
+STATISTICS:
+
+Combat Abilities: Can harm all lycanthropes
+Combat Abilities: dagger returns to the thrower
+THAC0:  +1 bonus
+Damage:  1D4 + 1
+Damage type:   missile (piercing)
+Weight: 0
+Speed Factor: 2
+Proficiency Type: Dagger
+Type:  1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~ 
+ 
+@1017 = ~This cowl is made of fur and has the color of a gibberling. There is strength in numbers and whenever you are in trouble, you can call for help.
+
+STATISTICS:
+
+Special:  Protects Against all forms of fear and panic
+Special Abilities: 
+ Mirror Image three times per day
+ Special: Caster causes from 2 to 8 exact duplicates of <PRO_HIMHER>self to come into being
+ Duration: 6 rounds~
+ 
+@1019 = ~This apparatus of gnomish origin has been designed to be easy to use by anyone. Reid Bugwhipper (or some better gnomish-sounding bug-killing name) used the spectacles in his pest and bug extermination practice. Tragically, he perished when a particularly egregious infestation of giant spiders overwhelmed him - he had meticulous preparations but his count of the critters was off by one.
+
+STATISTICS:
+
+Special Abilities: 
+ Knock once per day
+ Special: Opens locked, held, or wizard-locked doors
+ Duration: Instant
+
+Special Abilities:  +5% to lock picking
+Special Abilities:  +25% to find traps
+Special Abilities:  Wearer gets confused for 2 rounds on equipping the item if not a thief or gnome~
+
+@1022 = ~The Urdunnirin were created by Dumathoin from the shield dwarves of Shanatar. Being a generally a non-aggressive race they retreated from other races into the depths of the Underdark the became know for there abilities to walk through stone and shape it with ease. they are now treated as legend as they are rarely seen by other races of the underdark and almost unheard of by those on the surface.
+
+This griddle harnesses their strength and endurance providing a strength and constitution bonus to who ever wears. the bonus is more pronounced with the Urdunnirin's dwarven kin.
+
+The girdle itself looks very plain but robust, made of thick sturdy but ashen grey leather it seems quite unremarkable until worn where it provides surprising strength and vigour. It is also noticeably heavy to carry but not wear.
+
+STATISTICS:
+
+STATISTICS:
+   +2 to Strength when equipped
+   +3 to Constitution when equipped
+
+Usable By:
+ Dwarves~
+
+@1024 = ~Commissioned by a sneak-thief known as Janta the Jumpy, this set of goggles is intricately enchanted to detect threatening creatures and hide them from the wearer in a veil of magical darkness. In addition, they improve the wearer's focus at delicate manual tasks.
+
+Janta's fortunes turned when he began wearing these goggles, and he was overheard bragging of treasures he recovered from all over the Sword Coast. But nothing lasts forever, and he vanished about a year later. He was last seen inquiring after ways to reach the legendary Undercity buried beneath Baldur's Gate.
+
+STATISTICS:
+Special Abilities:  +10% to lock picking
+Special Abilities:  +10% to find trapspicking
+Special Abilities:  +10% to hide in shadowspicking
+Special Abilities:  Blinds wearer when they see an enemy 
+
+Usable By:
+ Thief
+ Monk
+ Ranger~
+ 
+@1026 = ~This unusual blob of pitch black clay is freezing cold to the touch and resembles an executioner's hood. It can be stretched and shaped into a variety of forms for one's own amusement, but always reverts to its original, eerie shape.
+
+STATISTICS:
+
+Special Abilities: 
+ Executioner's Eyes once per day
+ Special: Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies
+ Area of Effect: 15 ft. radius
+ Duration: 10 rounds~
+ 
+@1032 = ~This very powerful mage robe provides excellent protection by increasing saving throws, reducing casting time, regenerating wounds in battle, and immunizing against Necromantic magic, making it particularly useful. This robe was made some time ago by the legendary archmage Jasteya, Chosen of Mystra renowned in all the Realms and loved by all.t lavender hue of this stone dances and sparkles, as if the stone itself were alive. 
+
+STATISTICS:
+
+Equipped Abilities: Wearer regenerates 1 hit point every 6 seconds 
+Equipped Abilities:Special: Immunity to Necromantic spells
+Armor Class:  0
+Saving Throw:  +2 bonus
+Improves casting speed by 2
+Weight:  6
+Only usable by:
+ Mage~
+ 
+@1034 = ~This beautiful and finely polished dark green ioun stone, created by a talented enchanter, immunizes not only its bearer against the Negative Plane but intreases significantly too the chances in case of confrontations; it's usable moreover by everyone, which can to make it most useful for many professions.
+
+STATISTICS:
+
+While Equipped:
+ Saving Throws: +1
+ Immunity to Level Drain~
+ 
+@1036 = ~Bards tell that this sweater was knitted long ago from blessed hollyphant wool, the work of an artisan who sought to fashion a sweater worthy of pairing with the fabled golden pantaloons. While much ink has been spilled in the quest for its origins, wearers do find that they are ever so slightly lucky, as though some kindly being is watching over them. Even though the Sweater seems uncomfortable to wear,  it actually fits everybody nicely. Wearing the sweater gives you a warm and fuzzy feeling - and a strange longing for turnips.
+
+STATISTICS:
+
+While Equipped:
+ Armor Class: +1
+ Saving Throws: +1
+ Find Traps: +5%
+ Pick Pockets: +5%
+ Move Silently: +5%
+ Hide In Shadows: +5%
+ Detect Illusion: +5%
+ Set Traps: +5%
+ Luck: +1~
+@1037 = ~Bards tell that this sweater was knitted long ago from blessed hollyphant wool, the work of an artisan who sought to fashion a sweater worthy of pairing with the fabled golden pantaloons. While much ink has been spilled in the quest for its origins, wearers do find that they are ever so slightly lucky, as though some kindly being is watching over them. Even though the Sweater seems uncomfortable to wear,  it actually fits everybody nicely. Wearing the sweater gives you a warm and fuzzy feeling - and a strange longing for turnips.
+
+STATISTICS:
+
+While Equipped:
+ +1 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 19-20)
+ Armor Class: +1
+ Saving Throws: +1
+ Find Traps: +5%
+ Pick Pockets: +5%
+ Move Silently: +5%
+ Hide In Shadows: +5%
+ Detect Illusion: +5%
+ Set Traps: +5%
+ Luck: +1~
+ 
+@1043 = ~Favoured by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.
+
+STATISTICS:
+
+While Equipped: While enraged, any opponent within 5-ft. that successfully hits the wearer suffers 1d4 points of piercing damage.
+Armor Class: 3
+Weight: 65
+Requires: 12 Strength
+Not Usable By:
+ Non-Dwarves
+ Bard 
+ Druid
+ Mage
+ Thief~
+ 
+@1045 = ~Forged by the infamous drow weaponsmith Draegloth Veldrin, the Dart of the Lethargic Soul is a masterpiece of Underdark craftsmanship. Veldrin, a devout follower of Kiaransalee, imbued this dart with energies drawn from souls trapped between life and death. While not crafted by the deity herself, the dart resonates with her essence, reflecting her dominion over vengeance and undeath.
+
+Those struck by the dart experience an overwhelming lethargy, their movements slowed as if burdened by the weight of lost souls. The wielder, shielded by the dart's necromantic magic, gains immunity to similar slowing effects, allowing them to move unimpeded through battles that mire others.
+
+STATISTICS:
+
+Dart returns instantly to user's hand after being thrown.
+
+While Equipped: Immunity to slow
+Combat Ability: 20% chance of slowing target for 12 seconds, save vs. death at -2 to negate
+THAC0: +3 bonus
+Damage:  1D3 +3
+Damage type:  missile (piercing)
+Weight: 0
+Speed Factor: 0
+Proficiency Type: Dart
+Type:  1-handed
+Not Usable By:
+ Cleric~
+ 
+@1047 = ~Once held by the notorious necromancer Szass Tam, the lich lord of Thay, the Vampiric Dart of Eternal Hunger embodies the perpetual craving of the undead. Forged through a gruesome ritual involving the sacrificial blood of a hundred innocents from the realm of Aglarond, the dart is a vessel of insatiable thirst. When held, it feels unnaturally cold, and a faint pulse can be sensed, mirroring a heartbeat that no longer exists.
+
+Its thirst for life is particularly potent against the pure-hearted, drawing greater sustenance from their virtuous souls. The dart's hunger extends to magic itself, occasionally reigniting the fading embers of the wielder's own spells. However, the wielder must be cautious, for the dart demands a price, sipping away a fragment of their vitality upon being equipped.
+
+STATISTICS:
+
+Special abilities:
+ Vampiric Touch once per day
+ Special: Target loses 6d6 Hit Points that are added to the caster's current Hit Points
+ Area of Effect: 1 creature
+ Duration: 1 hour
+
+Dart returns instantly to user's hand after being thrown.
+
+Upon equipping, the dart drinks some of the wielder's blood, temporarily reducing Constitution by 1 point up to once per 24 hours
+
+Combat Ability: 20% chance to steal 1d4 Hit Points from the target
+Combat Ability: 5% chance to restore one forgotten spell slot to the wielder (up to fourth level)
+THAC0: +4 bonus
+Damage:  1D3 +4
+Damage type:  missile (piercing)
+Weight: 0
+Speed Factor: 0
+Proficiency Type: Dart
+Type:  1-handed
+Not Usable By:
+ Cleric~
+ 
+@1059 = ~An artifact of the legendary necromancer Acererak, the Dart of the Severing Mist is a weapon of unparalleled lethality. Enshrouded in a corrosive fog drawn from the Demiplane of Acid, this dart doesn't merely wound—it severs the very thread of life. The mist that envelops it is said to dissolve flesh and bone in an instant, explaining how such a small weapon can produce a Vorpal effect.
+
+The wielder is enveloped in the same corrosive mist, granting them the benefits of Ko'Zedaz's Caustic Shell. This acid-infused barrier not only protects against similar attacks but also harms those who dare strike the wielder, marking them with the dart's deadly essence.
+
+This dart is a relic of epic power, its mere presence commanding respect and fear. It is a testament to Acererak's mastery over life and death, and few weapons in existence can rival its deadly efficiency.
+
+STATISTICS:
+
+Dart returns instantly to user's hand after being thrown.
+
+While Equipped: 
+ Acid Resistance: +20%
+ 3 points of acid damage to any who deal out any damage to the wielder
+
+Combat Abilities:
+ 5% chance per hit of a vorpal hit (instant death by decapitation)
+ 
+THAC0: +5 bonus
+Damage:  1D3 +5
+Damage type:  missile (piercing)
+Weight: 0
+Speed Factor: 0
+Proficiency Type: Dart
+Type:  1-handed
+Not Usable By:
+ Cleric~
+ 
+@1061 = ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It's obvious a lot of time and effort went into its creation, and although not apparent at first, a slight blue glow can be seen emanating from the runes.
+
+STATISTICS:
+
+Equipped Abilities: 
+ Physical Damage Resistance: +5%
+ Saving Throws: +1
+ Armor Class: +%defense%
+    
+THAC0:  ++%attack% bonus
+Damage:  2D4 + +%attack%
+Damage type:  slashing
+Weight:  7
+Speed Factor: 4
+Proficiency Type: Bastard Sword
+Type:  1-handed
+Requires: 11 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief~
+ 
+@1063 = ~When the magical component for this item, a living Black Dragon, was transformed by the mage creating the magic item he did not know there was a halfling thief still alive in its belly wasting away as his potion of acid resistance was wearing off. The soul of the thief was trapped in the item and as such he refuses to work for anyone not skilled in thieving arts.
+
+STATISTICS:
+
+Equipped Abilities: 
+ Save vs. Breath: +1
+ Resistance to Magic Damage: +20%
+ Hide In Shadows: +10%
+ 20% of Caustic Sheath when attacked
+  Special: +50% Acid Resistance, 1d6+6 acid damage if hit, attacks deal an additional +3 Acid Damage.
+  Duration: 4 rounds
+Usable by: 
+ Thief
+ Ranger
+ Monk
+ Bard~
