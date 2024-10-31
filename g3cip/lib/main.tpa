@@ -329,6 +329,19 @@ END
 
 COPY_EXISTING ~g3crune3.itm~ ~override/g3crunez.itm~ // initial version that needs ID
   WRITE_SHORT 0x42 80 // assign lore
+
+// if no 1pp, adjust darts
+ACTION_IF !enhanced_edition BEGIN
+
+  OUTER_SET projectile = IDS_OF_SYMBOL (projectl 1dart08)
+  ACTION_IF projectile < 0 THEN BEGIN OUTER_SET projectile = 32 END
+  
+  COPY_EXISTING ~g3clsoul.itm~ ~override~
+                ~g3cvamp.itm~  ~override~
+                ~g3cacid.itm~  ~override~
+    LPF ALTER_HEADER INT_VAR match_type = 2 projectile END
+    
+END 
   
 /////                                                  \\\\\
 ///// spells                                           \\\\\
