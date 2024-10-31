@@ -333,13 +333,19 @@ COPY_EXISTING ~g3crune3.itm~ ~override/g3crunez.itm~ // initial version that nee
 // if no 1pp, adjust darts
 ACTION_IF !enhanced_edition BEGIN
 
-  OUTER_SET projectile = IDS_OF_SYMBOL (projectl 1dart08)
-  ACTION_IF projectile < 0 THEN BEGIN OUTER_SET projectile = 32 END
+  OUTER_SET proj_dart = IDS_OF_SYMBOL (projectl 1dart08)
+  ACTION_IF proj_dart < 0 THEN BEGIN OUTER_SET projectile = 32 END
+
+  OUTER_SET proj_dagg = IDS_OF_SYMBOL (projectl 1dagg05)
+  ACTION_IF proj_dagg < 0 THEN BEGIN OUTER_SET projectile = 30 END
   
   COPY_EXISTING ~g3clsoul.itm~ ~override~
                 ~g3cvamp.itm~  ~override~
                 ~g3cacid.itm~  ~override~
-    LPF ALTER_HEADER INT_VAR match_type = 2 projectile END
+    LPF ALTER_HEADER INT_VAR match_type = 2 projectile = proj_dart END
+  
+  COPY_EXISTING ~g3clunar.itm~ ~override~
+    LPF ALTER_HEADER INT_VAR match_type = 2 projectile = proj_dagg END
     
 END 
   
