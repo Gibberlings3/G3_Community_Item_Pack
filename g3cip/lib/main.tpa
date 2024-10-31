@@ -262,6 +262,9 @@ COPY ~g3cip/itm/g3cexec.itm~ ~override~
 COPY ~g3cip/itm/g3cjast.itm~ ~override~
   SAY 0x0c @1031 // identified name
   SAY 0x54 @1032 // identified description
+  PATCH_IF !enhanced_edition BEGIN
+    LPF DELETE_EFFECT INT_VAR match_opcode = 328 END
+  END  
 
 // Emerald Ioun Stone by Prof Errata
 COPY ~g3cip/itm/g3cemer.itm~ ~override~
@@ -376,12 +379,20 @@ ACTION_IF enhanced_edition BEGIN
 END
   
 COPY ~g3cip/spl/g3cvine.spl~  ~override~ // Vine Shield retaliation spell
-     ~g3cip/spl/g3ctinkz.spl~ ~override~
-     ~g3cip/spl/g3cspika.spl~ ~override~
      ~g3cip/spl/g3cspikb.spl~ ~override~
      ~g3cip/spl/g3cspikc.spl~ ~override~
      ~g3cip/spl/g3cvamp.spl~  ~override~
      ~g3cip/spl/g3cacid.spl~  ~override~ // Dart of the Severing Mist retaliation spell
+  
+COPY ~g3cip/spl/g3cspika.spl~ ~override~
+  PATCH_IF !enhanced_edition BEGIN 
+    LPF DELETE_EFFECT INT_VAR match_opcode = 321 END 
+  END  
+  
+COPY ~g3cip/spl/g3ctinkz.spl~ ~override~
+  PATCH_IF !enhanced_edition BEGIN 
+    LPF DELETE_EFFECT INT_VAR match_opcode = 61 END 
+  END  
 
 // Executioner Putty by Giovanski
 COPY ~g3cip/spl/g3cexec.spl~ ~override~
@@ -395,9 +406,17 @@ COPY_EXISTING ~spcl321.spl~ ~override~ // berserker enrage ability
 
 // Black Dragon Belt by zenblack
 COPY ~g3cip/spl/g3cbdb0.spl~ ~override~
-     ~g3cip/spl/g3cbdbd.spl~ ~override~
   SAY 0x08 @1064 // name
   LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 142 parameter2 = g3cbdbd END 
+  PATCH_IF !enhanced_edition BEGIN 
+    LPF DELETE_EFFECT INT_VAR match_opcode = 321 END 
+    LPF DELETE_EFFECT INT_VAR match_opcode = 328 END 
+    LPF CLONE_EFFECT INT_VAR match_opcode = 27 opcode = 206 parameter1 = 0 STR_VAR resource = g3cbdb0 insert = last END 
+  END  
+
+// Black Dragon Belt by zenblack
+COPY ~g3cip/spl/g3cbdbd.spl~ ~override~
+  SAY 0x08 @1064 // name
   
 /////                                                  \\\\\
 ///// creatures                                        \\\\\
