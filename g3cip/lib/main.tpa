@@ -2,18 +2,12 @@
 
 check caustic sheath circle animation
 
-Unknown opcodes: 
-  Robe of Jasteya
-  g3cbdb0.spl
-  g3cspika.spl
-  g3ctinkz.spl
+
   
 Other bugfixes
-  weapons: check melee/ranged icons on headers
-  BDB: timing on 232, strings/casting speed/animation for spell
-  slippery court: timing on 146, remove 321 from bad luck
   emerald ioun stone double wand save, lacks deathg
   exec putty: MR/power, abil icon, portrait icon
+  
   Realmshaper:
     'unaffected by effects from' messages
     2x cold damage on target  – Painted green, hit by blue: target is Hasted, and suffers from a -10 penalty to melee damage, however, each time they land an attack, they must save vs. spells or take 2d12 lightning damage.
@@ -406,8 +400,9 @@ COPY_EXISTING ~spcl321.spl~ ~override~ // berserker enrage ability
 
 // Black Dragon Belt by zenblack
 COPY ~g3cip/spl/g3cbdb0.spl~ ~override~
-  SAY 0x08 @1064 // name
+  //SAY 0x08 @1064 // name
   LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 142 parameter2 = g3cbdbd END 
+  LPF CLONE_EFFECT INT_VAR match_opcode = 27 opcode = 139 timing = 1 duration = 0 parameter1 = RESOLVE_STR_REF(@1064) END 
   PATCH_IF !enhanced_edition BEGIN 
     LPF DELETE_EFFECT INT_VAR match_opcode = 321 END 
     LPF DELETE_EFFECT INT_VAR match_opcode = 328 END 
