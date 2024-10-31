@@ -2,24 +2,25 @@
 
 check caustic sheath circle animation
 
-timkerer's spectacles - remove the spider bonus in descrption for original
-
-belt of urdunnir - update description
-
-done:
-
-for originals remove
-  realmshaper's brush
-  slippery court
-  cloak of sound rest
+Unknown opcodes: 
+  Robe of Jasteya
+  g3cbdb0.spl
+  g3cspika.spl
+  g3ctinkz.spl
   
-portrait icons
-  black dragon belt
-  executioner putty
-  
-lunar shards - swap specific enchantment
-
-vamp dart - change HP drain
+Other bugfixes
+  weapons: check melee/ranged icons on headers
+  BDB: timing on 232, strings/casting speed/animation for spell
+  slippery court: timing on 146, remove 321 from bad luck
+  emerald ioun stone double wand save, lacks deathg
+  exec putty: MR/power, abil icon, portrait icon
+  Realmshaper:
+    'unaffected by effects from' messages
+    2x cold damage on target  – Painted green, hit by blue: target is Hasted, and suffers from a -10 penalty to melee damage, however, each time they land an attack, they must save vs. spells or take 2d12 lightning damage.
+    missing aoe: Painted red, hit by blue: all nearby enemies and allies are protected (50% cumulative res) from Lightning damage, prot. from evil visual plays on every affected creature (15' radius).
+    does cold damage  – Painted blue, hit by blue: target is given two extra attacks per round, but cannot cast spells for half a round.
+    target save, nothing on wielder  – Painted blue, hit by green: both the wielder and the caster take 2d4 cold damage and are slowed (save vs. breath negates) for 1 round.
+    other effects (rgb, rg, gg, br, gr, rr) are fine
 */
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN // ee games
@@ -42,7 +43,7 @@ END ELSE BEGIN
 
 END
 
-INCLUDE ~g3cip/lib/functions.tpa~
+INCLUDE ~g3cip/lib/alter_header.tpa~
 
 /////                                                  \\\\\
 ///// 2da/ids edits                                    \\\\\
@@ -101,6 +102,7 @@ COPY ~g3cip/2da/g3crune.2da~  ~override~
 
 ACTION_IF enhanced_edition BEGIN 
 
+  INCLUDE ~g3cip/lib/cd_new_portrait_icon.tpa~
   LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1027) STR_VAR bam_file = g3cexecd RET g3exec  = icon END
   LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@1064) STR_VAR bam_file = g3cbdbd  RET g3cbdbd = icon END
 

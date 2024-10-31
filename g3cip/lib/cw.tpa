@@ -1,38 +1,35 @@
-DEFINE_ACTION_FUNCTION cd_no_more_cws
-  STR_VAR spell_original  = ""
-          spell_duplicate = ""
-          resource        = ""
-  BEGIN
-  
-  ACTION_IF (("%spell_original%"  STRING_COMPARE_CASE "" = 0) OR 
-             ("%spell_duplicate%" STRING_COMPARE_CASE "" = 0) OR 
-             ("%resource%"        STRING_COMPARE_CASE "" = 0)) BEGIN
-    WARN @6   
-  END ELSE BEGIN  
-    ACTION_IF !FILE_EXISTS_IN_GAME ~%spell_original%.spl~ OR !FILE_EXISTS_IN_GAME ~%resource%~ BEGIN
-      WARN @7
-    END ELSE BEGIN  
-    
-      COPY_EXISTING ~%spell_original%.spl~ ~override/%spell_duplicate%.spl~
-        WRITE_SHORT 0x1c 4 // spell type: innate
-        WRITE_LONG  0x34 1 // spell level
-        
-      COPY_EXISTING ~%resource%~ ~override~
-        LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 146 STR_VAR match_resource = EVAL ~%spell_original%~ resource = EVAL ~%spell_duplicate%~ END 
-        LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 148 STR_VAR match_resource = EVAL ~%spell_original%~ resource = EVAL ~%spell_duplicate%~ END 
-    
-    END
-    
-  END  
+INCLUDE ~g3cip/lib/cd_clone_spell_bulk_first.tpa~
 
-END
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi305 destination = g3c305 RET_ARRAY cd_clone_spell_array END // haste
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi212 destination = g3c212 RET_ARRAY cd_clone_spell_array END // mirror image
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi620 destination = g3c620 RET_ARRAY cd_clone_spell_array END // fire elem
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi621 destination = g3c621 RET_ARRAY cd_clone_spell_array END // air elem
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi416 destination = g3c416 RET_ARRAY cd_clone_spell_array END // poly self
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi207 destination = g3c207 RET_ARRAY cd_clone_spell_array END // knock
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi314 destination = g3c314 RET_ARRAY cd_clone_spell_array END // vamp touch
+LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = spwi224 destination = g3c224 RET_ARRAY cd_clone_spell_array END // glitterdust
 
-LAF cd_no_more_cws STR_VAR spell_original = spwi305 spell_duplicate = g3c305 resource = ~g3ccgsd.itm~ END // caster guide to self defense: haste
-LAF cd_no_more_cws STR_VAR spell_original = spwi212 spell_duplicate = g3c212 resource = ~g3ccgsd.itm~ END // caster guide to self defense: mirror image
-LAF cd_no_more_cws STR_VAR spell_original = spwi620 spell_duplicate = g3c620 resource = ~g3ccsm.itm~ END // Countability in Summoning Matrices: fire elemental
-LAF cd_no_more_cws STR_VAR spell_original = spwi621 spell_duplicate = g3c621 resource = ~g3ccsm.itm~ END // Countability in Summoning Matrices: air elemental
-LAF cd_no_more_cws STR_VAR spell_original = spwi212 spell_duplicate = g3c212 resource = ~g3cnever.itm~ END // never alone: mirror image
-LAF cd_no_more_cws STR_VAR spell_original = spwi416 spell_duplicate = g3c416 resource = ~g3cprc.itm~ END // power of real change: poly self
-LAF cd_no_more_cws STR_VAR spell_original = spwi207 spell_duplicate = g3c207 resource = ~g3ctinkr.itm~ END // power of real change: knock
-LAF cd_no_more_cws STR_VAR spell_original = spwi314 spell_duplicate = g3c314 resource = ~g3cvamp.itm~ END // Vampiric Dart of Eternal Hunger: vamp touch
-LAF cd_no_more_cws STR_VAR spell_original = spwi224 spell_duplicate = g3c224 resource = ~g3crestc.spl~ END // cloak of sound rest: glitterdust
+COPY_EXISTING ~g3ccgsd.itm~ ~override~ // caster guide to self defense
+  LPF ALTER_EFFECT INT_VAR match_opcode = 148 STR_VAR match_resource = spwi305 resource = g3c305 END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi212 resource = g3c212 END
+
+COPY_EXISTING ~g3ccsm.itm~ ~override~ // Countability in Summoning Matrices
+  LPF ALTER_EFFECT INT_VAR match_opcode = 148 STR_VAR match_resource = spwi620 resource = g3c620 END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 148 STR_VAR match_resource = spwi621 resource = g3c621 END
+
+COPY_EXISTING ~g3cnever.itm~ ~override~ // Never Alone by cdx
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi212 resource = g3c212 END
+
+COPY_EXISTING ~g3cprc.itm~ ~override~ // The Power of Real Change
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi416 resource = g3c416 END
+
+COPY_EXISTING ~g3ctinkr.itm~ ~override~ // Tinkerer's Spectacles by cdx
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi207 resource = g3c207 END
+
+COPY_EXISTING ~g3cvamp.itm~ ~override~ // Vampiric Dart of Eternal Hunger by Marzx13
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi314 resource = g3c314 END
+
+COPY_EXISTING ~g3crestc.spl~ ~override~ // cloak of sound rest: glitterdust
+  LPF ALTER_EFFECT INT_VAR match_opcode = 148 STR_VAR match_resource = spwi224 resource = g3c224 END
+
+INCLUDE ~g3cip/lib/cd_clone_spell_bulk_last.tpa~

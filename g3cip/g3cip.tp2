@@ -43,4 +43,3 @@ LABEL ~g3_community_item_pack_no_cw~
 
 INCLUDE ~g3cip/lib/main.tpa~
 INCLUDE ~g3cip/lib/cw.tpa~
-
