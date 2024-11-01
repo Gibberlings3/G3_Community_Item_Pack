@@ -379,7 +379,6 @@ ACTION_IF enhanced_edition BEGIN
       
     COPY ~g3cip/spl/g3cbrub1.spl~ ~override~ 
          ~g3cip/spl/g3cbrub2.spl~ ~override~ 
-         ~g3cip/spl/g3cbrub3.spl~ ~override~ 
          ~g3cip/spl/g3cbrub4.spl~ ~override~  
          ~g3cip/spl/g3cbrusb.spl~ ~override~  
          ~g3cip/spl/g3cbrusn.spl~ ~override~ 

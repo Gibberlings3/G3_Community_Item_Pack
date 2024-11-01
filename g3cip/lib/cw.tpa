@@ -30,6 +30,6 @@ COPY_EXISTING ~g3cvamp.itm~ ~override~ // Vampiric Dart of Eternal Hunger by Mar
   LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi314 resource = g3c314 END
 
 COPY_EXISTING ~g3crestc.spl~ ~override~ // cloak of sound rest: glitterdust
-  LPF ALTER_EFFECT INT_VAR match_opcode = 148 STR_VAR match_resource = spwi224 resource = g3c224 END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 146 STR_VAR match_resource = spwi224 resource = g3c224 END
 
 INCLUDE ~g3cip/lib/cd_clone_spell_bulk_last.tpa~
