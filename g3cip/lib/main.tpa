@@ -162,9 +162,9 @@ ACTION_IF enhanced_edition BEGIN
     COPY ~g3cip/itm/g3cbrush.itm~ ~override~
       SAY 0x0c @1029 // identified name
       SAY 0x54 @1030 // identified description
-      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_red   STR_VAR match_resource = g3cbrusr END
-      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_green STR_VAR match_resource = g3cbrusg END
-      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_blue  STR_VAR match_resource = g3cbrusb END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 318 parameter1 = g3brush_red   STR_VAR match_resource = g3cbrusr END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 318 parameter1 = g3brush_green STR_VAR match_resource = g3cbrusg END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 318 parameter1 = g3brush_blue  STR_VAR match_resource = g3cbrusb END
       
   END
 
@@ -365,14 +365,17 @@ ACTION_IF enhanced_edition BEGIN
 
     COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrur0.spl~ 
       LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_red  END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@1067) END
 
     COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrug0.spl~ 
       LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_green  END
       LPF ALTER_EFFECT INT_VAR match_opcode =   7 parameter1 = 53  END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@1068) END
 
     COPY ~g3cip/spl/g3cbrur0.spl~ ~override/g3cbrub0.spl~ 
       LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_blue   END
       LPF ALTER_EFFECT INT_VAR match_opcode =   7 parameter1 = 58  END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@1069) END
       
     COPY ~g3cip/spl/g3cbrub1.spl~ ~override~ 
          ~g3cip/spl/g3cbrub2.spl~ ~override~ 
@@ -385,7 +388,7 @@ ACTION_IF enhanced_edition BEGIN
       LPF ALTER_EFFECT INT_VAR match_opcode = 328 parameter2 = g3brush_redgreen  END
     
     COPY ~g3cip/spl/g3cbrusg.spl~ ~override~ 
-      LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter1 = g3brush_redgreen  END
+      LPF ALTER_EFFECT INT_VAR match_opcode = 318 parameter1 = g3brush_redgreen  END
       
   END
      

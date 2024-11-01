@@ -207,13 +207,13 @@ Combat abilities:
 – When hitting a target 33% chance to paint them green, 33% chance to paint them red, and 33% chance to paint them blue. Targets with a color already applied to them suffer additional effects as follows:
 – Painted green, hit by green: target is made invisible for one round, but takes 5 Poison damage per second for one round as well.
 – Painted green, hit by red: target is cursed as by the Contagion spell, but as a semi-permanent curse with a -4 save vs. breath.
-– Painted green, hit by blue: target is Hasted, and suffers from a -10 penalty to melee damage, however, each time they land an attack, they must save vs. spells or take 2d12 lightning damage.
+– Painted green, hit by blue: target is Hasted, and suffers from a -10 penalty to melee damage.
 – Painted red, hit by red: target immediately takes 4d6 slashing damage, some blood/gorey effect should play when this happens.
 – Painted red, hit by green: target must save vs. death or be knocked unconcious for one round.
 – Painted red, hit by blue: all nearby enemies and allies are protected (50% cumulative res) from Lightning damage, prot. from evil visual plays on every affected creature (15' radius).
 – Painted blue, hit by blue: target is given two extra attacks per round, but cannot cast spells for half a round.
 – Painted blue, hit by red: target is struck by lightning (Call Lightning animation plays), takes 7d7 lightning damage.
-– Painted blue, hit by green: both the wielder and the caster take 2d4 cold damage and are slowed (save vs. breath negates) for 1 round.
+– Painted blue, hit by green: target takes 2d4 cold damage and is slowed for 1 round.
 – For the specific combination of Red -> Green -> Blue, all previous effects are to be negated and a Rogue Stone is created in the target's inventory. 
 
 THAC0: +4
@@ -427,3 +427,6 @@ Equipped abilities:
 – Block one weapon attack, once per hour. Upon blocking an attack, cast Glitterdust near the wearer. 
 
 Weight: 3~
+@1067 = ~Painted Red~
+@1068 = ~Painted Green~
+@1069 = ~Painted Blue~
