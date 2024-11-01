@@ -90,7 +90,7 @@ Equipped abilities:
 
 Weight: 0~
 @1012 = ~Graze~
-@1013 = ~Once wielded by a duelist of minor note that sought utmost efficiency in combat. The Graze posseses no destructive enchantments and acts as a normal dagger in training. When used in live combat, the dagger reacts to attacks made against the wielder, moving on its own to minorly deflect attacks.
+@1013 = ~Once wielded by a duelist of minor note that sought utmost efficiency in combat. The Graze possesses no destructive enchantments and acts as a normal dagger in training. When used in live combat, the dagger reacts to attacks made against the wielder, moving on its own to deflect minor attacks.
 
 STATISTICS:
 
@@ -157,11 +157,11 @@ Equipped abilities:
 Weight: 1~
 @1020 = ~Uses Akkabar's Battleblade~
 @1021 = ~Belt of Urdunnir~
-@1022 = ~The Urdunnirin were created by Dumathoin from the shield dwarves of Shanatar. Being a generally a non-aggressive race they retreated from other races into the depths of the Underdark the became know for there abilities to walk through stone and shape it with ease. they are now treated as legend as they are rarely seen by other races of the underdark and almost unheard of by those on the surface.
+@1022 = ~The Urdunnirin were created by Dumathoin from the shield dwarves of Shanatar. Being a generally a non-aggressive race they retreated from other races into the depths of the Underdark the became know for there abilities to walk through stone and shape it with ease. they are now treated as legend as they are rarely seen by other races of the Underdark and almost unheard of by those on the surface.
 
 This griddle harnesses their strength and endurance providing a strength and constitution bonus to who ever wears. the bonus is more pronounced with the Urdunnirin's dwarven kin.
 
-The girdle itself looks very plain but robust, made of thick sturdy but ashen grey leather it seems quite unremarkable until worn where it provides surprising strength and vigour. It is also noticeably heavy to carry but not wear.
+The girdle itself looks very plain but robust, made of thick sturdy but ashen gray leather it seems quite unremarkable until worn where it provides surprising strength and vigor. It is also noticeably heavy to carry but not wear.
 
 STATISTICS:
 
@@ -205,16 +205,16 @@ STATISTICS:
 
 Combat abilities:
 – When hitting a target 33% chance to paint them green, 33% chance to paint them red, and 33% chance to paint them blue. Targets with a color already applied to them suffer additional effects as follows:
-– Painted green, hit by green: target is made invisible for one round, but takes 5 Poison damage per second for one round as well.
-– Painted green, hit by red: target is cursed as by the Contagion spell, but as a semi-permanent curse with a -4 save vs. breath.
-– Painted green, hit by blue: target is Hasted, and suffers from a -10 penalty to melee damage.
-– Painted red, hit by red: target immediately takes 4d6 slashing damage, some blood/gorey effect should play when this happens.
-– Painted red, hit by green: target must save vs. death or be knocked unconcious for one round.
-– Painted red, hit by blue: all nearby enemies and allies are protected (50% cumulative res) from Lightning damage, prot. from evil visual plays on every affected creature (15' radius).
-– Painted blue, hit by blue: target is given two extra attacks per round, but cannot cast spells for half a round.
-– Painted blue, hit by red: target is struck by lightning (Call Lightning animation plays), takes 7d7 lightning damage.
-– Painted blue, hit by green: target takes 2d4 cold damage and is slowed for 1 round.
-– For the specific combination of Red -> Green -> Blue, all previous effects are to be negated and a Rogue Stone is created in the target's inventory. 
+– Painted green, hit by green: target is made invisible for one round and takes 5 Poison damage per second for one round as well
+– Painted green, hit by red: target is cursed as by the Contagion spell, but as a semi-permanent curse with a -4 save vs. breath
+– Painted green, hit by blue: target is Hasted, but suffers from a -10 penalty to melee damage
+– Painted red, hit by red: target immediately takes 4d6 slashing damage
+– Painted red, hit by green: target must save vs. death or be knocked unconscious for one round
+– Painted red, hit by blue: all nearby enemies and allies receive 50% resistance from electricity
+– Painted blue, hit by blue: target is given two extra attacks per round but cannot cast spells for 3 seconds
+– Painted blue, hit by red: target is struck by lightning and takes 7d7 lightning damage
+– Painted blue, hit by green: target takes 2d4 cold damage and is slowed for 1 round
+– For the specific combination of Red to Green to Blue, all previous effects are to be negated and a Rogue Stone is created in the target's inventory
 
 THAC0: +4
 Damage: 1d10+4
@@ -227,7 +227,7 @@ Requires:
 
 Weight: 12~
 @1031 = ~Robe of the Archmage Jasteya~
-@1032 = ~This very powerful mage robe provides excellent protection by increasing saving throws, reducing casting time, regenerating wounds in battle, and immunizing against Necromantic magic, making it particularly useful. This robe was made some time ago by the legendary archmage Jasteya, Chosen of Mystra renowned in all the Realms and loved by all.t lavender hue of this stone dances and sparkles, as if the stone itself were alive. 
+@1032 = ~This very powerful mage robe provides excellent protection by increasing saving throws, reducing casting time, regenerating wounds in battle, and immunizing against Necromantic magic, making it particularly useful. This robe was made some time ago by the legendary archmage Jasteya, Chosen of Mystra renowned in all the Realms and loved by all.
 
 STATISTICS:
 
@@ -240,7 +240,7 @@ Equipped abilities:
 
 Weight: 6~
 @1033 = ~Emerald Ioun Stone~
-@1034 = ~This beautiful and finely polished dark green ioun stone, created by a talented enchanter, immunizes not only its bearer against the Negative Plane but intreases significantly too the chances in case of confrontations; it's usable moreover by everyone, which can to make it most useful for many professions.
+@1034 = ~This beautiful and finely polished dark green ioun stone, created by a talented enchanter, immunizes not only its bearer against the Negative Plane but increases significantly too the chances in case of confrontations; it's usable moreover by everyone, which can to make it most useful for many professions.
 
 STATISTICS:
 
@@ -288,7 +288,7 @@ Weight: 0~
 @1040 = ~Cespenar can wash your sweater with the Elven Holy Water and nuts from the Tree of Life to make it ALLLLLL better. It will cost 5,000 gold.~
 @1041 = ~Smells funny in here, you needs to clean.~
 @1042 = ~Spiked Armor~
-@1043 = ~Favoured by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.
+@1043 = ~Favored by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.
 
 STATISTICS:
 
