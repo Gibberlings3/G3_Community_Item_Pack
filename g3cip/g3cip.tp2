@@ -3,7 +3,7 @@ SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mod
 
 VERSION ~v2~
 
-README ~g3cip/languages/%LANGUAGE%/readme-g3cip.html~ ~g3cip/readme-g3cip.html~
+README ~g3cip/%LANGUAGE%_readme-g3cip.pdf~ ~g3cip/%LANGUAGE%_readme-g3cip.html~ ~g3cip/readme-g3cip.html~
 
 AUTO_TRA ~%tra_location%/%s~
 
@@ -16,6 +16,8 @@ LANGUAGE
 LANGUAGE
   ~Polish (by my_summertime, SoM Membress, part of CoB Clan)~
   ~polish~
+  ~g3cip/languages/english/game.tra~
+  ~g3cip/languages/english/weidu.tra~
   ~g3cip/languages/polish/game.tra~
   ~g3cip/languages/polish/weidu.tra~
 
