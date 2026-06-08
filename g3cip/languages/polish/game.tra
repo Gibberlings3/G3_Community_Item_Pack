@@ -1,0 +1,523 @@
+@1000 = ~Ostrza Akkabara~
+@1001 = ~Władcy Imperium Shoon posiadali wyjątkowe magiczne pierścienie znane jako Pierścienie Qysari. Słowo „qysar”, oznaczające „cesarza”, przyjął Amahl Shoon III – uznawany za pierwszego z władców, którzy uczynili z Imperium monarchię absolutną. Pierścienie Qysari stanowiły wyspecjalizowaną odmianę tzw. pierścieni shoon, tworzonych w Calimshanie w latach 27-450 KD. Każdy z nich wyróżniał się unikatową konstrukcją i metodą zaklinania.
+
+Niewolny skryba Rativ ym Shoon, który opisał te artefakty w 356 KD, wspomina o dwunastu pierścieniach tego typu. Informacje jego autorstwa później trafiły do dzieła „Magie Południa”, spisanego przez Zatana Szybkostrzałę, Herolda Athkatli. Do dziś jednak szczegółowo opisano jedynie dziesięć z nich – przy czym pochodzenie dwóch pozostaje nie do końca potwierdzone.
+
+Legendarny pierścień Akkabara – znany jako Pierścień Ostrzy – był pierwszym spośród Pierścieni Qysari. To niezwykłe dzieło sztuki magicznej pozwalało przywołać osłonę wirujących, śmiercionośnych ostrzy po wypowiedzeniu odpowiedniej komendy.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+
+Właściwości ładunków:
+– Bariera ostrzy, raz dziennie
+Specjalne:
+– Tworzy barierę krążących, niezwykle ostrych kling
+Czas działania: 1 tura
+
+Waga: 0~
+
+
+@1002 = ~Poradnik samoobrony maga~
+@1003 = ~Ta książka zawiera zaskakująco praktyczne rady dla każdego czarującego, który znajdzie się w środku walki. Do porad takich jak „uciekaj naprawdę szybko” i „nie daj się trafić” autor dołączył zestaw wskazówek, jak wykorzystać magię, by faktycznie móc zastosować je w praktyce.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Przyspieszenie, raz dziennie
+Specjalne:
+– Wszystkie istoty objęte działaniem poruszają się z podwójną szybkością
+Czas działania: 13 rund
+
+– Lustrzane odbicia, raz dziennie
+Specjalne: Czarujący tworzy od dwóch do ośmiu dokładnych kopii siebie, które przyjmują ciosy zamiast niego
+Czas działania: 13 rund
+
+Waga: 0~
+
+
+@1004 = ~Policzalność w matrycach przywołań~
+@1005 = ~Ten ezoteryczny traktat z zakresu teorii arkanów byłby niezrozumiały dla kogokolwiek bez odpowiedniego przygotowania magicznego. Choć większość księgi poświęcono naturze rytuałów przywołań – w odniesieniu do policzalnych Sfer żywiołów oraz nieskończonych, niepoliczalnych warstw Otchłani – znalazło się w niej także kilka praktycznych przykładów, przydatnych każdemu czarującemu.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Przyzwanie żywiołaka ognia, raz dziennie
+Specjalne: przyzywa żywiołaka ognia w pobliżu czarującego
+Czas działania: 10 tur
+
+– Przyzwanie żywiołaka powietrza, raz dziennie
+Specjalne: przyzywa żywiołaka powietrza w pobliżu czarującego
+Czas działania: 10 tur
+
+Waga: 0~
+
+
+@1006 = ~Moc Prawdziwej Zmiany~
+@1007 = ~Większość tej książki to typowy poradnik motywacyjny, jednak w ostatnim rozdziale autor zamieścił zestaw arkanów przeznaczonych dla tych, którzy są naprawdę zdesperowani.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Polimorfowanie siebie, raz dziennie
+Specjalne: pozwala czarującemu przybrać formę innej istoty
+Czas działania: 4 tury
+
+Waga: 0~
+
+
+@1008 = ~Pnąca tarcza~
+@1009 = ~Ta niezwykła tarcza została spleciona z żywych pnączy, które poruszają się i wiją, jakby miały własną wolę. Ponad czterysta lat temu kupił ją w Sigil, Mieście Drzwi, pewien kupiec handlujący z nieznaną rasą olbrzymów z odległej krainy. Z czasem trafiła do Faerûnu, gdzie przejął ją leśny zwiadowca Elric z Wysokiego Lasu. Elric wykorzystał ją, by obronić swoją wioskę przed bandą gnolli – pnącza oplatały napastników i odmieniły losy bitwy.
+
+Po latach wiernej służby Elric podarował tarczę swojej uczennicy, młodej druidce Sylvanie. Wyruszyła z nią w głąb Cormanthoru i przez wiele lat broniła świętych gajów. Ostatecznie wpadła w zasadzkę drowich zwiadowców; choć walczyła dzielnie, poległa, a tarcza trafiła do Podmroku. Tam wykupił ją duergar, który później wymienił ją na rzadkie klejnoty z krasnoludem imieniem Thrain.
+
+Thrain zabrał tarczę do Mithrilowego Dworu, gdzie przez pewien czas dzierżył ją jego brat Balin podczas starć z plemionami goblinów. W jednej z zażartych bitew Balin poległ, sama zaś tarcza zaginęła w chaosie walki. Po latach wypłynęła znów – tym razem w rękach najemniczki Katariny z Amn, która twierdziła, że wygrała ją w kości. Pnącza tarczy służyły jej do chwytania żywych celów, co szybko przyniosło jej rozgłos.
+
+Jej szczęście skończyło się, gdy przegrała pojedynek z paladynem sir Reginaldem z Athkatli. Ten zabrał tarczę jako trofeum, lecz uznał, że jej dzika natura nie pasuje do jego zdyscyplinowanego stylu walki, więc sprzedał ją calimshańskiemu kupcowi. Kupiec z kolei stracił ją na rzecz piratów z Wybrzeża Mieczy. Kapitan, Rudy Rufus, korzystał z niej podczas abordażu aż do dnia, gdy jego okręt zatonął podczas sztormu – tarczę uznano wówczas za bezpowrotnie utraconą.
+
+Dziesięciolecia później morze wyrzuciło Pnącą tarczę na brzeg nieopodal Wrót Baldura, gdzie odnalazł ją młody poszukiwacz przygód. Jej historia wciąż się nie skończyła – żywe pnącza nadal łakną nowych przeciwników, a kolejne rozdziały jej opowieści dopisują ci, którzy odważą się ją nosić.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+– Nie chroni przed atakami dystansowymi
+– Oplątuje na dwie rundy każdego, kto zrani posiadacza (rzut obronny przeciw czarom z modyfikatorem -2 neguje)
+
+Wymagania:
+– Siła: 4
+
+Waga: 2~
+
+@1010 = ~Pewny krok~
+@1011 = ~Ta para wysłużonych, mocno przetartych butów ma zaskakująco dobrą przyczepność. Choć wyglądają niepozornie, znacznie wspomagają pracę tych, którzy polegają na zręczności, sprycie i lekkim kroku.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Znajdowanie pułapek: +5%
+– Kradzież kieszonkowa: +5%
+– Ciche chodzenie: +5%
+– Krycie się w cieniu: +5%
+– Wykrycie iluzji: +5%
+– Zastawianie pułapek: +5%
+– Szczęście: +1
+
+Waga: 0~
+
+
+@1012 = ~Muśnięcie~
+@1013 = ~Niegdyś używany przez pewnego mało znanego szermierza, który dążył do absolutnej skuteczności w walce. Muśnięcie nie posiada właściwości ofensywnych – podczas treningu działa jak zwykły sztylet. W prawdziwej walce jednak ostrze reaguje na nadchodzące ciosy, poruszając się samoistnie i odbijając lżejsze ataki.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Klasa Pancerza: +1 przeciw atakom siecznym i kłutym
+
+Obrażenia: 1k4
+Typ obrażeń: kłute
+Opóźnienie: 2
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 1~
+
+
+@1014 = ~Odłamki Księżyca~
+@1015 = ~Legenda opowiada o skromnym pasterzu, którego życie odmieniła modlitwa do Selûne, odmówiona w blasku pełni księżyca. Następnej nocy kula ognia spadła z nieba, niszcząc stodołę i zabijając większość jego trzody. Pasterz nie uwierzył, że Księżycowa Panna mogłaby zesłać takie nieszczęście – szukał więc znaku wśród zgliszcz. Odnalazł meteoryt, a w nim fragmenty metalu przypominającego srebro. Z miejsca powiązał znalezisko z boginią.
+
+Zanieśli metal do świątyni, gdzie mnisi go pobłogosławili. Z czasem pasterz, przyjęty jako nowicjusz, zdołał zgromadzić środki, by zakon mógł zlecić wykucie świętej broni z tego błogosławionego materiału. Kowal połączył niebiański metal z czystym srebrem, tworząc siedem doskonałych sztyletów – każdy symbolizujący jedną z siedmiu gwiazd w świętym znaku Selûne.
+
+PARAMETRY:
+
+Specjalne:
+– Może ranić wszystkie likantropy
+– Po użyciu może zostać odzyskany z celu
+
+Obrażenia: 1k4, +2 przeciw istotom o złym charakterze
+TraK0: +1
+Typ obrażeń: pocisk
+Opóźnienie: 2
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 0~
+
+
+@1016 = ~Kaptur mnogości~
+@1017 = ~Kaptur ten uszyto z futra w odcieniu przypominającym gibberlinga. Kryje się w nim swoista pociecha – wszak siła tkwi w liczbie. Gdy sytuacja staje się naprawdę groźna, można wezwać wsparcie... choćby własnych odbić.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na strach i panikę
+
+Właściwości ładunków:
+– Lustrzane odbicie, trzy razy dziennie
+Specjalne:
+– Czarujący tworzy od dwóch do ośmiu dokładnych kopii samego siebie, które przyjmują ciosy zamiast niego
+Czas działania: 6 rund
+
+Waga: 1~
+
+
+@1018 = ~Okulary majsterkowicza~
+@1019 = ~To urządzenie o gnomim rodowodzie zaprojektowano tak, by mógł z niego korzystać praktycznie każdy. Reid Żukobój (lub jakieś inne, bardziej gnomie imię pogromcy insektów) używał okularów w swoim fachu eksterminatora szkodników. Niestety, jego życie zakończyło się tragicznie, gdy mylnie policzył gigantyczne pająki, które przyszło mu wytępić – jeden „nadprogramowy” okazał się śmiertelny.
+
+PARAMETRY:
+
+Specjalne:
+– Otwieranie zamków: +5%
+– Znajdowanie pułapek: +25%
+– TraK0: +2 przeciw pająkom (tylko Złodzieje)
+– Jeśli przedmiot zakłada postać inna niż złodziej lub gnom, zostaje zdezorientowana na 2 rundy
+
+Właściwości ładunków:
+– Otwarcie, raz dziennie
+Specjalne:
+– Otwiera zamknięte, zaryglowane lub zabezpieczone magicznie drzwi
+Czas działania: natychmiastowy
+
+Waga: 1~
+
+
+@1020 = ~Używa Ostrza Akkabara~
+
+@1021 = ~Pas urdunnira~
+@1022 = ~Urdunnirzy zostali stworzeni przez Dumathoina z klanu krasnoludów tarczowych Shanatar. Pokojowa z natury rasa unikała kontaktu z innymi, zapuszczając się coraz głębiej w Podmrok, gdzie wsławiła się zdolnością przechodzenia przez skały i kształtowania kamienia z zadziwiającą łatwością. Dziś uważa się ich niemal za legendę – rzadko widują ich nawet mieszkańcy Podmroku, a na powierzchni niemal nikt nie słyszał o ich istnieniu.
+
+Ten pas wykorzystuje ich wytrzymałość i siłę, wzmacniając noszącego go – zwłaszcza przedstawicieli rasy spokrewnionej z urdunnirami, czyli krasnoludów. Choć wygląda na prosty i surowy, wykonany z masywnej, popielatej skóry, jego działanie zaskakuje każdego, kto go założy. Co ciekawe, jest znacznie cięższy, niż sprawia wrażenie – choć jego waga niemal nie przeszkadza podczas noszenia.
+
+PARAMETRY:
+
+Specjalne:
+– Siła: +1 (+2 w przypadku krasnoludów)
+– Kondycja: +2 (+3 w przypadku krasnoludów)
+
+Waga: 8~
+
+
+@1023 = ~Gogle wrażliwe na niebezpieczeństwo~
+@1024 = ~Zamówione przez złodziejaszka znanego jako Jante Nerwus, te gogle zostały misternie zaczarowane tak, aby wykrywały zagrażające stworzenia – i natychmiast ukrywały je przed użytkownikiem, spowijając jego pole widzenia w zasłonę magicznej ciemności. Oprócz tego ułatwiają skupienie podczas precyzyjnych zadań manualnych.
+
+Los Jantego odmienił się wraz z założeniem gogli. Przechwalał się zdobyczami z całego Wybrzeża Mieczy, ale szczęście nie trwa wiecznie. Zniknął około rok później; ostatni raz widziano go, gdy wypytywał o sposoby dotarcia do legendarnego Podziemnego Miasta pod Wrotami Baldura.
+
+PARAMETRY:
+
+Specjalne:
+– Krycie się w cieniu: +10%
+– Znajdowanie pułapek: +10%
+– Otwieranie zamków: +10%
+– Oślepia noszącego na widok wroga
+
+Waga: 0~
+
+
+@1025 = ~Kit kata~
+@1026 = ~Ta nietypowa, smolistoczarna glina jest lodowata w dotyku i przypomina kaptur kata. Można ją ku własnej uciesze rozciągać i formować w rozmaite kształty, lecz zawsze powraca do swej pierwotnej, niepokojącej postaci.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Oczy kata, raz dziennie
+Specjalne:
+– Poprawia percepcję sojuszników, pozwalając im dostrzegać ukryte słabości wszystkich stworzeń. Czar dodaje modyfikator +4 do ataku oraz +4 do trafień krytycznych (standardowe trafienie krytyczne wypada przy wyniku 16-20)
+Obszar działania: w promieniu 5 metrów
+Czas działania: 10 rund
+
+Waga: 0~
+
+
+@1027 = ~Oczy kata~
+@1028 = ~Poprawia percepcję sojuszników, pozwalając im dostrzegać ukryte słabości wszystkich stworzeń. Czar dodaje modyfikator +4 do ataku oraz +4 do trafień krytycznych (standardowe trafienie krytyczne wypada przy wyniku 16-20). Obszar działania wynosi 5 metrów, a efekt utrzymuje się przez 10 rund.~
+
+
+@1029 = ~Pędzel kształtowania rzeczywistości~
+@1030 = ~Mag Ullion, pragnąc wykorzystać potęgę istot znacznie potężniejszych od siebie, założył przed laty kult czcicieli smoków pod nazwą „Syn Drago”. Wabił wyznawców obietnicami podboju i władzy, a dla umocnienia swej pozycji zaczarował tę symboliczną broń, przeznaczoną dla swego przybocznego, Jaramora Odważnego.
+
+Gdy Smoczy Oddech trafia przeciwnika, uwalnia pięć rodzajów żywiołowej furii: wściekły ogień czerwonego smoka, trujący wyziew zielonego, błyskawicę smoka błękitnego, kwas czarnego oraz przenikliwe zimno białego. Ullion pierwszy poznał te efekty, zabity ręką ambitnego Jaramora, który zapragnął przejąć władzę. Bez maga kult szybko się rozpadł – nie było już komu nadać mu kierunku.
+
+PARAMETRY:
+
+Specjalne:
+– Po trafieniu: 33% szansy, że ofiara zostanie „pomalowana” na zielono, 33% na czerwono, 33% na niebiesko. Kolejne trafienia powodują dodatkowe efekty, zależne od dotychczasowego koloru:
+
+– Zielona trafiona zielonym: ofiara staje się niewidzialna na jedną rundę i otrzymuje 5 obrażeń od trucizny na sekundę przez jedną rundę
+– Zielona trafiona czerwonym: ofiara zostaje objęta długotrwałą klątwą, jak przy zaklęciu Zaraza (rzut obronny przeciw zionięciom z modyfikatorem -4, skraca o połowę)
+– Zielona trafiona niebieskim: ofiara znajduje się pod wpływem Przyspieszenia, jednak zadawane przez nią obrażenia w walce wręcz zostają obniżone o 10
+
+– Czerwona trafiona czerwonym:ofiara otrzymuje natychmiast 4k6 obrażeń siecznych
+– Czerwona trafiona zielonym: ofiara musi wykonać rzut obronny przeciw śmierci lub zostanie ogłuszona na jedną rundę
+– Czerwona trafiona niebieskim: wszyscy znajdujący się w pobliżu wrogowie i sojusznicy otrzymują 50% odporności na elektryczność
+
+– Niebieska trafiona niebieskim: ofiara zyskuje dwa dodatkowe ataki na rundę, ale na trzy sekundy traci możliwość rzucania zaklęć
+– Niebieska trafiona czerwonym: ofiara zostaje trafiona błyskawicą i otrzymuje 7k7 obrażeń od elektryczności
+– Niebieska trafiona zielonym: ofiara otrzymuje 2k4 obrażeń od zimna i zostaje spowolniona na jedną rundę
+
+– Specyficzna kombinacja: trafienie kolejno czerwonym, zielonym i niebieskim neguje poprzednie efekty, a w ekwipunku ofiary pojawia się kamień łotrzyków
+
+Obrażenia: 1k10 +4
+TraK0: +4
+Typ obrażeń: kłute
+Opóźnienie: 5
+Rodzaj biegłości: halabarda
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 13
+
+Waga: 12~
+
+
+@1031 = ~Szata arcymagini Jasteyi~
+@1032 = ~Ta potężna szata maga zapewnia znakomitą ochronę, zwiększając odporność na czary, przyspieszając rzucanie zaklęć, a nawet stopniowo regenerując rany podczas walki. Dodatkowo całkowicie uodparnia na magię nekromantyczną, co czyni ją niezwykle cenną dla każdego czarodzieja.
+
+Szata została stworzona przed laty przez legendarną arcymaginię Jasteyę, Wybrankę Mystry – znaną i podziwianą w całych Krainach za swą niezwykłą biegłość w sztuce magicznej.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: 0
+– Rzuty obronne: +2
+– Szybkość rzucania czarów: +2
+– Regeneracja punktów życia: 1/rundę
+– Niewrażliwość na czary ze szkoły Nekromancji
+
+Waga: 6~
+
+
+@1033 = ~Szmaragdowy kamień ioun~
+@1034 = ~Ten piękny, starannie wypolerowany, ciemnozielony kamień ioun został stworzony przez wyjątkowo utalentowanego zaklinacza. Nie tylko chroni posiadacza przed negatywną energią, ale także zwiększa jego szanse przetrwania w wymagających starciach. Co więcej – może być używany przez przedstawicieli każdej profesji, co czyni go wyjątkowo wszechstronnym artefaktem.
+
+PARAMETRY:
+
+Specjalne:
+– Niewrażliwość na wyssanie poziomów
+– Rzuty obronne: +1
+
+Waga: 0~
+
+
+@1035 = ~Szczęśliwy sweter~
+@1036 = ~Bardowie opowiadają, że ten sweter został niegdyś utkany z błogosławionej wełny holifantów przez rzemieślnika, który pragnął stworzyć odzienie godne towarzyszenia legendarnym złotym pantalonom. Choć dzieło to obrosło wieloma podaniami, jedno pozostaje pewne – jego użytkownicy czują, jakby otaczała ich delikatna aura szczęścia, jakby jakaś życzliwa istota czuwała nad każdym ich krokiem.
+
+Choć z pozoru wydaje się niewygodny, dopasowuje się do każdej sylwetki. Noszenie go wywołuje przyjemne, ciepłe uczucie... oraz dziwną ochotę na rzepę.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Rzuty obronne: +1
+– Znajdowanie pułapek: +5%
+– Kradzież kieszonkowa: +5%
+– Ciche chodzenie: +5%
+– Krycie się w cieniu: +5%
+– Wykrycie iluzji: +5%
+– Zastawianie pułapek: +5%
+– Szczęście: +1
+
+Waga: 0~
+
+
+@1037 = ~Bardowie opowiadają, że ten sweter został niegdyś utkany z błogosławionej wełny holifantów przez rzemieślnika, który pragnął stworzyć odzienie godne towarzyszenia legendarnym złotym pantalonom. Choć dzieło to obrosło wieloma podaniami, jedno pozostaje pewne – jego użytkownicy czują, jakby otaczała ich delikatna aura szczęścia, jakby jakaś życzliwa istota czuwała nad każdym ich krokiem.
+
+Choć z pozoru wydaje się niewygodny, dopasowuje się do każdej sylwetki. Noszenie go wywołuje przyjemne, ciepłe uczucie... oraz dziwną ochotę na rzepę.
+
+PARAMETRY:
+
+Specjalne:
+– Szansa na trafienie krytyczne: +1 (standardowe trafienie krytyczne wypada przy wyniku 19-20)
+– Klasa Pancerza: +1
+– Rzuty obronne: +1
+– Znajdowanie pułapek: +5%
+– Kradzież kieszonkowa: +5%
+– Ciche chodzenie: +5%
+– Krycie się w cieniu: +5%
+– Wykrycie iluzji: +5%
+– Zastawianie pułapek: +5%
+– Szczęście: +1
+
+Waga: 0~
+
+
+@1038 = ~Ooo! Co to jest? Takie cieplutkie i mięciutkie.~
+@1039 = ~Ładniusi, szczęśliwy sweter! Ze święconej wody elfów, orzechów z Drzewa Życia i 5000 sztuk złota Cespenar może zrobić z niego coś jeszcze lepszego!~
+
+@1040 = ~Cespenar może wyprać twój sweter w elfiej święconej wodzie z dodatkiem orzechów z Drzewa Życia, żeby był BARDZIEJ lepszy. Będzie to kosztować 5000 sztuk złota.~
+
+@1041 = ~Dziwnie tu pachnie. Trzeba posprzątać.~
+
+@1042 = ~Kolczasta zbroja~
+
+@1043 = ~Preferowana przez krasnoludzkich berserkerów zwanych szałojownikami, ta niemagiczna zbroja płytowa pokryta jest masywnymi metalowymi kolcami. Każdy, kto zdoła trafić jej noszącego, naraża się na natychmiastowy odwet. Ze względu na masywną konstrukcję, zbroja ta może być noszona wyłącznie przez krasnoludy.
+
+PARAMETRY:
+
+Specjalne:
+– Podczas szału każdy znajdujący się w promieniu 1,5 metra przeciwnik, który trafi noszącego, otrzymuje 1k4 obrażeń kłutych
+
+Klasa Pancerza: 3 (0 przeciwko obrażeniom siecznym)
+
+Wymagania:
+– Siła: 12
+
+Waga: 65~
+
+
+@1044 = ~Strzałka letargicznej duszy~
+@1045 = ~Wykuta przez osławionego drowiego płatnerza Draeglotha Veldrina, Strzałka letargicznej duszy stanowi arcydzieło rzemiosła Podmroku. Veldrin, oddany wyznawca Kiaransalee, nasycił ją energiami dusz uwięzionych pomiędzy życiem a śmiercią. Choć nie została stworzona przez samą boginię, rezonuje z jej esencją, odzwierciedlając władzę nad zemstą i nieumarłymi.
+
+Trafieni strzałką przeciwnicy doświadczają obezwładniającego letargu – ich ruchy zwalniają, jakby przygniatał ich ciężar utraconych dusz. Władający nią natomiast, chroniony nekromantyczną magią, zyskuje odporność na podobne efekty spowolnienia, mogąc poruszać się swobodnie pośród bitewnego chaosu.
+
+PARAMETRY:
+
+Specjalne:
+– Niewrażliwość na spowolnienie
+– Po rzucie wraca do właściciela
+– 20% szans na spowolnienie celu na 12 sekund (rzut obronny przeciw śmierci z modyfikatorem -2, neguje)
+
+Obrażenia: 1k3 +3
+TraK0: +3
+Typ obrażeń: pocisk
+Opóźnienie: 0
+Rodzaj biegłości: strzałka
+Typ broni: 1-ręczna
+
+Waga: 0~
+
+
+@1046 = ~Wampiryczna strzałka wiecznego głodu~
+@1047 = ~Należąca niegdyś do osławionego nekromanty Szassa Tama, liszego władcy Thay, Wampiryczna strzałka wiecznego głodu uosabia nienasycony apetyt nieumarłych. Została wytworzona podczas makabrycznego rytuału, w którym wykorzystano ofiarną krew stu niewinnych mieszkańców Aglarondu. Strzałka ta jest naczyniem nieugaszonej żądzy życia – lodowata w dotyku, pulsująca słabym rytmem, przypominającym bicie serca, które dawno przestało istnieć.
+
+Jej głód jest szczególnie silny wobec istot prawych, z których dusz czerpie większą moc. Strzałka potrafi także żywić się magią, czasem rozniecając na nowo wygasające iskry zaklęć w umyśle właściciela. Należy jednak zachować ostrożność – za swoją moc żąda zapłaty, wysysając cząstkę życiowej energii przy każdym założeniu.
+
+PARAMETRY:
+
+Specjalne:
+– Przy założeniu wysysa krew noszącego, tymczasowo obniżając Kondycję o 1 (maksymalnie raz na 24 godziny)
+– Po rzucie wraca do właściciela
+– 20% szans na wysysanie ofierze 1k4 punktów życia
+– 5% szans na odnowienie jednego zużytego zaklęcia (do 4. poziomu)
+
+Właściwości ładunków:
+– Wampiryczne dotknięcie, raz dziennie
+Specjalne:
+– Cel traci 6k6 punktów życia, które dodawane są do aktualnych punktów życia czarującego
+Obszar działania: 1 istota
+Czas działania: 1 godzina
+
+Obrażenia: 1k3 +4, +1 przeciw istotom o dobrym charakterze
+TraK0: +4
+Typ obrażeń: pocisk
+Opóźnienie: 0
+Rodzaj biegłości: strzałka
+Typ broni: 1-ręczna
+
+Waga: 0~
+
+
+@1048 = ~Gilbert Lington III~
+@1049 = ~Pozdrawiam cię, młodzieńcze.~ ~Pozdrawiam cię, dziewczę.~
+@1050 = ~Nie mam na to czasu.~
+
+@1051 = ~Pokaż mi swoje towary.~
+@1052 = ~Żegnaj.~
+@1053 = ~Niestety, podróżniku, nie mogę tego zrobić. Dao wciąż blokują karawany w mieście i nie mam nic do sprzedania.~ ~Niestety, podróżniczko, nie mogę tego zrobić. Dao wciąż blokują karawany w mieście i nie mam nic do sprzedania.~
+@1054 = ~Oczywiście, rzuć okiem na mój towar.~
+@1055 = ~Witaj ponownie, poszukiwaczu przygód.~~Witaj ponownie, poszukiwaczko przygód.~
+@1056 = ~Bohater Targowa we własnej osobie! Składam podziękowania i zapraszam na zakupy.~~Bohaterka Targowa we własnej osobie! Składam podziękowania i zapraszam na zakupy.~
+@1057 = ~Dziś nie potrzebujemy twoich towarów.~
+
+
+@1058 = ~Strzałka rozdzierającej mgły~
+@1059 = ~Artefakt legendarnego nekromanty Acereraka, Strzałka rozdzierającej mgły jest bronią o bezprecedensowej śmiercionośności. Spowita żrącą mgłą pochodzącą z Półsfery kwasu, strzałka ta nie tylko rani – ona przecina samą nić życia. Opary, które ją otaczają, potrafią w jednej chwili rozpuścić ciało i kości, co tłumaczy, jak tak niewielka broń może wywoływać efekt worpalny.
+
+Noszącego otacza ta sama korozyjna mgła, zapewniając mu ochronę porównywalną ze Żrącą powłoką Ko’Zedaza. Ta nasycona kwasem bariera nie tylko zabezpiecza przed podobnymi atakami, lecz także rani każdego, kto odważy się zaatakować właściciela, naznaczając go zabójczą esencją strzałki.
+
+Jest to przedmiot o ponadprzeciętnej mocy – sama jego obecność budzi respekt i strach. Stanowi świadectwo absolutnego panowania Acereraka nad życiem i śmiercią, niewiele broni może dorównać mu skutecznością.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na kwas: +20%
+– Po rzucie wraca do właściciela
+– 5% szans przy trafieniu na trafienie worpalne (natychmiastowa śmierć przez dekapitację)
+– 3 obrażenia od kwasu dla każdego, kto zrani właściciela
+
+Obrażenia: 1k3 +5, +1k3 od kwasu
+TraK0: +5
+Typ obrażeń: pocisk
+Opóźnienie: 0
+Rodzaj biegłości: strzałka
+Typ broni: 1-ręczna
+
+Waga: 0~
+
+
+@1060 = ~Elysiańskie ostrze runiczne +%attack%~
+
+
+@1061 = ~Poza znakomitym kunsztem wykonania, na całej powierzchni ostrza widać drobne runy mocy. Już na pierwszy rzut oka widać, że włożono w nie ogrom pracy i czasu. Choć nie od razu, po chwili można dostrzec delikatną, błękitną poświatę sączącą się z wyrytych znaków.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na obrażenia fizyczne: +5%
+– Rzuty obronne: +1
+– Klasa Pancerza: +%defense%
+
+TraK0: +%attack%
+Obrażenia: 2k4 s+%attack%
+Typ obrażeń: sieczne
+Opóźnienie: 4
+Rodzaj biegłości: miecz półtoraręczny
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 7~
+
+
+@1062 = ~Pas czarnego smoka~
+@1063 = ~Gdy magiczny komponent tego przedmiotu – żywy czarny smok – został poddany transformacji przez maga tworzącego artefakt, nie wiedział on, że w jego wnętrzu wciąż żyje niziołkowy złodziej. Uwięziony w brzuchu bestii konał powoli, gdy kończyło się działanie jego mikstury odporności na kwas. Dusza złodzieja została związana z pasem i do dziś odmawia on współpracy z kimkolwiek, kto nie posługuje się sztuką skradania.
+
+PARAMETRY:
+
+Specjalne:
+– Rzuty obronne przeciw zionięciom: +1
+– Odporność na obrażenia od magii: +20%
+– Krycie się w cieniu: +10%
+– 20% szans przy trafieniu na spowicie noszącego Żrącą powłoką
+Specjalne (Żrąca powłoka): +50% odporności na kwas, 1k6+6 obrażeń od kwasu, gdy noszący zostanie trafiony, a jego ataki zadają dodatkowe +3 pkt. obrażeń od kwasu
+
+Waga: 2~
+
+
+@1064 = ~Żrąca powłoka~
+@1065 = ~Płaszcz bezpiecznego wytchnienia~
+@1066 = ~Ten płaszcz jest lekki i łatwo go złożyć, a jego miękkie, puchate wykończenie sprawia wrażenie niezwykle wygodnego. Stworzono go dla księcia Jeffy z Sembii, który wprowadzał okrutne prawa i panicznie bał się zamachu. Po magicznym związaniu z właścicielem, co trwa godzinę, ochronne właściwości płaszcza uaktywniają się. Od tego momentu, jeśli noszący zostanie trafiony bronią, płaszcz natychmiast rozpoczyna leczenie ran. Jednocześnie uwalnia chmurę świetlistych drobin przypominających czar Błyszczący pył. Drobiny te dezorientują napastnika, ujawniają niewidzialnych przeciwników i – co najważniejsze – wyrywają właściciela ze snu. Magia chroni tylko przed jednym atakiem i odnawia się po godzinie.
+
+Niestety dla księcia Jeffy, płaszcz nie uchronił go przed trucizną podaną przez własnego kucharza.
+
+PARAMETRY:
+
+Specjalne:
+– Raz na godzinę trafienie w walce wręcz wywołuje Błyszczący pył w pobliżu noszącego oraz rozpoczyna regenerację 1 pkt. życia na rundę przez godzinę
+
+Waga: 3~
+
+
+@1067 = ~Pomalowany na czerwono~
+@1068 = ~Pomalowany na zielono~
+@1069 = ~Pomalowany na niebiesko~
+@1070 = ~Wyssano punkty życia~
